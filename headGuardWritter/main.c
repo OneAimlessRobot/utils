@@ -55,7 +55,7 @@ void removeBloatFromFilePath(char* nilEndedBuff){
 int main(int argc, char** argv){
 
     if(argc<2){
-        printf("Tens de meter um nome de ficheiro como argumento. Bem como o que queres meter no headerGuard\n");
+        printf("Tens de meter uma path de ficheiro como argumento");
         return 1;
 
     }
