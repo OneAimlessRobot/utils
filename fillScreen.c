@@ -1,10 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
+#define DEFAULT_WIDTH 1000
 
-int main(void){
-	int i=0;
-	while(1){
-	printf("%d\n",i++);
+int main(int argc, char** argv){
+	
+	int width;
+	if(argc != 2){
+
+		width=DEFAULT_WIDTH;
+
 	}
-	return 0;	
+	else{
+		width= atoi(argv[1]);
+
+	}
+	while(1){
+
+		for(int i=0;i<width;i++){
+
+			printf("#");
+		}
+		usleep(50000);
+		printf("\n");
+	}
+	return 0;
 }
