@@ -27,11 +27,11 @@ void removeBloatFromFilePath(char* nilEndedBuff){
 	
 		if(nilEndedBuff[i]=='/'&&i){
 			
-			char* tmpBuff=malloc(size-cursor);
-			memset(tmpBuff,0,size-cursor);
-			memcpy(tmpBuff,nilEndedBuff+cursor,size-cursor);
+			char* tmpBuff=malloc(size-cursor+1);
+			memset(tmpBuff,0,size-cursor+1);
+			memcpy(tmpBuff,nilEndedBuff+cursor+1,size-cursor+1);
 			memset(nilEndedBuff,0,size);
-			memcpy(nilEndedBuff,tmpBuff,size-cursor);
+			memcpy(nilEndedBuff,tmpBuff,size-cursor+1);
 			size-=cursor;
 			free(tmpBuff);
 			cursor=0;
