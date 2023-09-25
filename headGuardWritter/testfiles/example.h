@@ -1,8 +1,6 @@
 #ifndef EXAMPLE_H
 #define EXAMPLE_H
 
-#ifndef EXAMPLE_H
-#define EXAMPLE_H
 
 
 
@@ -13,5 +11,4 @@
 #include <morestuff.h>
 #include <xixi>
 #include <coco>
-#endif
 #endif
