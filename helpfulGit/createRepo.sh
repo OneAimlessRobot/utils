@@ -9,6 +9,7 @@ echo "$1/$2"
 mkdir "$1"
 mkdir "$1/$2"
 cp -r "$(echo $(pwd))/.randStringGenerator" "$1/$2"
+cp -r "$(echo $(pwd))/.templates/.gitignore" "$1/$2"
 
 echo "Queres criar repo local com permissões totais? (Senao n vais poder alterar nada sem escrever sudo o tempo todo...)"
 read option
