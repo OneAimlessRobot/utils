@@ -8,6 +8,7 @@ fi
 echo "$1/$2"
 mkdir "$1"
 mkdir "$1/$2"
+cp -r "$(echo $(pwd))/.randStringGenerator" "$1/$2"
 
 echo "Queres criar repo local com permissões totais? (Senao n vais poder alterar nada sem escrever sudo o tempo todo...)"
 read option
@@ -27,6 +28,10 @@ fi
 cd  "$1/$2"
 git init
 touch ".gitkeep"
+touch "updateRepoMasterBranch.sh"
+echo "#!/bin/bash" >> "updateRepoMasterBranch.sh"
+echo "git add . && git commit -m '.randStringGenerator/randStringGenerator 10' && git push origin master" >> "updateRepoMasterBranch.sh"
+
 git add .
 git commit 
 echo "AGORA VAI AO GITHUB NA TUA CONTA E CRIA REPO NO BROWSER"
