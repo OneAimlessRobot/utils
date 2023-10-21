@@ -31,7 +31,7 @@ echo "$1/$2 about to be created"
 mkdir "$1"
 mkdir "$1/$2"
 echo "$1/$2 created"
-cp "$resDirheadGuardWritter" "$1/$2"
+cp $resDir"headGuardWritter" "$1/$2"
 cd  "$1/$2"
 mkdir $projectDirectories
 touch Makefile

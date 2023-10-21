@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+
 void strToUpper(char* nilEndedBuff){
 
     for(int i=0;nilEndedBuff[i]!=0;i++){
