@@ -17,6 +17,8 @@ templateFileName="template"
 
 mainHeaderFileName="preprocessor.h"
 
+moduleSpawner="spawnModule.sh"
+
 mainHeaderTemplate="mainHeaderBody"
 if [ $# -ne 2 ];
     then echo "primeiro argumento- diretoria do projeto\nSegundo- nome do projeto\n"
@@ -24,7 +26,7 @@ if [ $# -ne 2 ];
 fi
 echo "Currently at: $startDir"
 touch "$resDir$tmpFileName"
-echo "BINARY= $2" >> "$resDir$tmpFileName"
+echo "BINARY= $2.exe" >> "$resDir$tmpFileName"
 echo "" >> "$resDir$tmpFileName"
 echo "$(cat $resDir$templateFileName)" >> "$resDir$tmpFileName"
 echo "$1/$2 about to be created"
@@ -32,6 +34,7 @@ mkdir "$1"
 mkdir "$1/$2"
 echo "$1/$2 created"
 cp $resDir"headGuardWritter" "$1/$2"
+cp $resDir$moduleSpawner "$1/$2"
 cd  "$1/$2"
 mkdir $projectDirectories
 touch Makefile

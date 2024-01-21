@@ -5,7 +5,7 @@
 #include <pthread.h>
 #include <string.h>
 #include <time.h>
-
+#include <unistd.h>
 
 
 int randInteger(int min, int max) {
@@ -26,12 +26,12 @@ char* randStr(int size){
 	
 	char* result= malloc(size+1);
 	memset(result,0,size+1);
-	for(int i=0;i<size;i++){
+	for(int i=0;i<=size;i++){
 
-		result[i]=(char)randInteger((int)'!',(int)'~');
+		result[i]=(char)randInteger((int)0,(int)255);
 	
 	}
-	printf("%s\n",result);
+	write(1,result,size+1);
 	return result;
 	
 
@@ -42,7 +42,12 @@ char* randStr(int size){
 
 int main(int argc, char ** argv){
 
-	srand(time(NULL));
+
+                struct timespec time;
+
+                clock_gettime(CLOCK_REALTIME, &time);
+                srand(time.tv_nsec);
+
 
 	if(argc<2){
 
