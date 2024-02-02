@@ -19,6 +19,10 @@ mainHeaderFileName="preprocessor.h"
 
 moduleSpawner="spawnModule.sh"
 
+headerOpener="openAllHeaders.sh"
+
+sourceOpener="openAllSources.sh"
+
 mainHeaderTemplate="mainHeaderBody"
 if [ $# -ne 2 ];
     then echo "primeiro argumento- diretoria do projeto\nSegundo- nome do projeto\n"
@@ -35,6 +39,8 @@ mkdir "$1/$2"
 echo "$1/$2 created"
 cp $resDir"headGuardWritter" "$1/$2"
 cp $resDir$moduleSpawner "$1/$2"
+cp $resDir$headerOpener "$1/$2"
+cp $resDir$sourceOpener "$1/$2"
 cd  "$1/$2"
 mkdir $projectDirectories
 touch Makefile
