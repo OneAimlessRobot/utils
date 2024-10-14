@@ -8,4 +8,8 @@
 *.o
 *.exe
 *.d
+*.swp
+*.mp3
 .metadata/
+
+
