@@ -4,20 +4,22 @@
 
 #define DEFAULT_WIDTH 1000
 #define DEFAULT_U_PERIOD 1000
+#define TIMES 1
 int main(int argc, char** argv){
 	
-	int width,uperiod;
-	if(argc != 3){
+	int width,uperiod,times;
+	if(argc != 4){
 
 		width=DEFAULT_WIDTH;
 		uperiod=DEFAULT_U_PERIOD;
+		times=TIMES;
 	}
 	else{
 		width= atoi(argv[1]);
 		uperiod= atoi(argv[2]);
-
+		times=atoi(argv[3]);
 	}
-	while(1){
+	for(int i=0;i<times;i++){
 
 		for(int i=0;i<width;i++){
 
