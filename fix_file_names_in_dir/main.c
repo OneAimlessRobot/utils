@@ -56,7 +56,7 @@ void* move_file(void* mem){
 
 	int fd_in=-1,fd_out=-1;
 	
-	if((fd_in=open(fnames[0],O_RDONLY,0777))<0){
+	if((fd_in=open(fnames[0],O_RDWR,0777))<0){
 
 		perror("filepath invalid in file moving!!!\n");
 		exit(-1);
@@ -73,7 +73,7 @@ void* move_file(void* mem){
 	while((numread=read(fd_in,buff,1024))>0){
 
 		write(fd_out,buff,numread);
-		memset(buff,0,1204);
+		memset(buff,0,1024);
 
 	}
 	
@@ -107,20 +107,22 @@ void mvFiles(void){
 		strcpy(buffdst,buffsrc);
 
 		fixFileString(buffdst);
+		printf("File src: %s\n",buffsrc);
 		printf("File dst: %s\n",buffdst);
 		if(string_is_fixed(buffsrc)){
-			printf("String is fixed!!\n");
+			printf("String is fixed!!\n%s\n",buffsrc);
 			continue;
 		}
-		
+		pthread_t tid;
 		char* fnames[2];
 		fnames[0]=buffsrc;
 		fnames[1]=buffdst;
-		move_file((void*)fnames);
-		//pthread_create(&tid,NULL,move_file,(void*)fnames);
-		//pthread_detach(tid);
+//		move_file((void*)fnames);
+		pthread_create(&tid,NULL,move_file,(void*)fnames);
+		pthread_join(tid,NULL);
 		memset(buffsrc,0,1024);
 		memset(buffdst,0,1024);
+
 	}
 	fclose(fp);
 
