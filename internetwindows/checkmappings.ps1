@@ -1,0 +1,1 @@
+Get-NetNatStaticMapping | Where-Object { $_.NatName -eq "WSL-NAT" }
