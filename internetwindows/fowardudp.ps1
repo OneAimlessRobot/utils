@@ -1,3 +1,4 @@
+
 #--------------------------------------------------------
 # Background: WSL UDP port forwarding
 #--------------------------------------------------------
@@ -16,16 +17,16 @@
 # Instead, set up a new NAT network for port forwarding.
 # The new NAT network must not conflict with the default WSL NAT network.
 
-$addr_wsl_switch = "192.168.226.107"
+$addr_wsl_switch = "192.168.1.107"
 
-$addr_wsl_guest = "192.168.226.108"
+$addr_wsl_guest = "192.168.1.108"
 
-$nat_addr = "192.168.226.0/24"
+$nat_addr = "192.168.1.0/24"
 
-$bigport = 60000
-$smallport = 30001
-$nports= ($bigport-$smallport)
-$njobs= 50
+$bigport = 12000
+$smallport = 11000
+$nports= ($bigport-$smallport+1)
+$njobs= 1
 $ports_per_job= ($nports/$njobs)
 $remaining_ports= ($nports%$njobs)
 # Assign new IP address to WSL switch
@@ -57,4 +58,5 @@ For($j=1;$j -le $njobs;$j++){
 
 # Configure new IP address on WSL
 # The new IP address needs to be the same as the one specified in port forwarding
+
 wsl -u root ip address add $addr_wsl_guest/24 dev eth0

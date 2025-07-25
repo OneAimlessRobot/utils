@@ -1,3 +1,4 @@
+
 #!/bin/bash
 #169.254.216.209
 sudo ip addr flush dev eth0
