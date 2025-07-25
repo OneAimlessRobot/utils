@@ -31,5 +31,4 @@ iex "New-NetFireWallRule -DisplayName 'WSL 2 Firewall Unlock' -Direction Inbound
 for( $i = 0; $i -lt $ports.length; $i++ ){
   $port = $ports[$i];
   iex "netsh interface portproxy delete v4tov4 listenport=$port listenaddress=$addr";
-  iex "netsh interface portproxy add v4tov4 listenport=$port listenaddress=$addr connectport=$port connectaddress=$remoteport";
 }
