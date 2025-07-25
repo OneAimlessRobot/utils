@@ -1,3 +1,4 @@
+
 $remoteport = bash.exe -c "ifconfig eth0 | grep 'inet '"
 $found = $remoteport -match '\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}';
 
@@ -11,13 +12,14 @@ if( $found ){
 #[Ports]
 
 #All the ports you want to forward separated by coma
-$ports1=@(11001);
+$ports=@(8001);
+
 
 #[Static ip]
 #You can change the addr to your ip config to listen to a specific address
 $addr='0.0.0.0';
-$ports_a = $ports1 -join ",";
-$ports_b = $ports2 -join ",";
+$ports_a = $ports -join ",";
+
 
 #Remove Firewall Exception Rules
 iex "Remove-NetFireWallRule -DisplayName 'WSL 2 Firewall Unlock' ";
@@ -26,9 +28,8 @@ iex "Remove-NetFireWallRule -DisplayName 'WSL 2 Firewall Unlock' ";
 iex "New-NetFireWallRule -DisplayName 'WSL 2 Firewall Unlock' -Direction Outbound -LocalPort $ports_a -Action Allow -Protocol TCP";
 iex "New-NetFireWallRule -DisplayName 'WSL 2 Firewall Unlock' -Direction Inbound -LocalPort $ports_a -Action Allow -Protocol TCP";
 
-
-for( $i = 0; $i -lt $ports1.length; $i++ ){
-  $port = $ports1[$i];
+for( $i = 0; $i -lt $ports.length; $i++ ){
+  $port = $ports[$i];
   iex "netsh interface portproxy delete v4tov4 listenport=$port listenaddress=$addr";
   iex "netsh interface portproxy add v4tov4 listenport=$port listenaddress=$addr connectport=$port connectaddress=$remoteport";
 }
