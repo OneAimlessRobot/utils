@@ -3,6 +3,7 @@
 *.cmi
 *.class
 *.exec
+*.exe
 *.cmx
 *.a
 *.o
@@ -11,5 +12,7 @@
 *.swp
 *.mp3
 .metadata/
-
+*.save
+*.log
+*.out
 

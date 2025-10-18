@@ -1,0 +1,1 @@
+echo $(.randStringGenerator/randStringGenerator/randStringGenerator 10)
