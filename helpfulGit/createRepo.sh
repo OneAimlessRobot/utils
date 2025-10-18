@@ -8,6 +8,8 @@ fi
 echo "$1/$2"
 mkdir "$1"
 mkdir "$1/$2"
+rm -rf "$(echo $(pwd))/.randStringGenerator/randStringGenerator/randStringGenerator"
+gcc -v "$(echo $(pwd))/.randStringGenerator/randStringGenerator/main.c" -o "$(echo $(pwd))/.randStringGenerator/randStringGenerator/randStringGenerator"
 cp -r "$(echo $(pwd))/.randStringGenerator" "$1/$2"
 cp -r "$(echo $(pwd))/.templates/.gitignore" "$1/$2"
 
@@ -31,7 +33,7 @@ git init
 touch ".gitkeep"
 touch "updateRepoMasterBranch.sh"
 echo "#!/bin/bash" >> "updateRepoMasterBranch.sh"
-echo "git add . && git commit -m "'$(.randStringGenerator/randStringGenerator/randStringGenerator 10)'" && git push origin master" >> "updateRepoMasterBranch.sh"
+echo "git add . && git commit -m "echo 'echo $(.randStringGenerator/randStringGenerator/randStringGenerator 10)'" && git push origin master" >> "updateRepoMasterBranch.sh"
 
 git add .
 git commit 

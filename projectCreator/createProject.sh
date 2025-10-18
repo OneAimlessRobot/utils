@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 projectDirectories=" Sources Includes resources"
 
 startDir="$(echo $(pwd))/"
