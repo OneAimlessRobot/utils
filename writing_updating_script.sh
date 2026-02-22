@@ -1,30 +1,23 @@
 #!/bin/bash
 
+((rm -rf /mnt/FASTstorage/FASTprogs/webcrookedstuff/pages/botchatsFAST)&&(cp -rv /mnt/FASTstorage/botchatsFAST /mnt/FASTstorage/FASTprogs/webcrookedstuff/pages/))&
+((rm -rf /mnt/FASTstorage/FASTprogs/webcrookedstuff/pages/BotchatsFASTNEWEST)&&(cp -rv /mnt/FASTstorage/BotchatsFASTNEWEST /mnt/FASTstorage/FASTprogs/webcrookedstuff/pages/))&
+((rm -rf /mnt/FASTstorage/FASTprogs/webcrookedstuff/pages/BotchatsFASTNEWEST2)&&(cp -rv /mnt/FASTstorage/BotchatsFASTNEWEST2 /mnt/FASTstorage/FASTprogs/webcrookedstuff/pages/))&
 
-echo "Beginning script!!!!"
-echo "Replacing botchats!!!!!"
-((rm -rf F:/FASTprogs/webcrookedstuff/pages/botchatsFAST)&&(cp -rv F:/botchatsFAST F:/FASTprogs/webcrookedstuff/pages/))&
-((rm -rf F:/FASTprogs/webcrookedstuff/pages/BotchatsFASTNEWEST)&&(cp -rv F:/BotchatsFASTNEWEST F:/FASTprogs/webcrookedstuff/pages/))&
-((rm -rf F:/FASTprogs/webcrookedstuff/pages/BotchatsFASTNEWEST2)&&(cp -rv F:/BotchatsFASTNEWEST2 F:/FASTprogs/webcrookedstuff/pages/))&
-#((rm -rf E:/Adriano/progs/webcrookedstuff/pages/botchatsFAST)&&(cp -rv F:/botchatsFAST E:/Adriano/progs/webcrookedstuff/pages/))&
-#((rm -rf E:/Adriano/progs/webcrookedstuff/pages/BotchatsFASTNEWEST)&&(cp -rv F:/BotchatsFASTNEWEST E:/Adriano/progs/webcrookedstuff/pages/))&
-#((rm -rf E:/Adriano/progs/webcrookedstuff/pages/BotchatsFASTNEWEST2)&&(cp -rv F:/BotchatsFASTNEWEST2 E:/Adriano/progs/webcrookedstuff/pages/))&
 wait
 echo "Done replacing botchats!!!"
 
 
 echo "Replacing Writing!!!!!"
-((rm -rf I:/Writing)&&(cp -rv ~/Desktop/Writing I:/))&
-((rm -rf F:/Writing)&&(cp -rv ~/Desktop/Writing F:/))&
-#((rm -rf E:/Adriano/Writing)&&(cp -rv ~/Desktop/Writing E:/Adriano/))&
-((rm -rf F:/GithubFAST/escrita/Writing)&&(cp -rv ~/Desktop/Writing F:/GithubFAST/escrita/))&
-((rm -rf F:/FASTprogs/webcrookedstuff/texts/Writing)&&(cp -rv ~/Desktop/Writing F:/FASTprogs/webcrookedstuff/texts/))&
-#((rm -rf E:/Adriano/progs/webcrookedstuff/texts/Writing)&&(cp -rv ~/Desktop/Writing E:/Adriano/progs/webcrookedstuff/texts/))&
+((rm -rf /mnt/REBORN/Writing2)&&(cp -rv ~/Desktop/Writing2 /mnt/REBORN/))&
+((rm -rf /mnt/SUPER_CAVALEIRO/Writing2)&&(cp -rv ~/Desktop/Writing2 /mnt/SUPER_CAVALEIRO/))&
+((rm -rf /mnt/FASTstorage/Writing2)&&(cp -rv ~/Desktop/Writing2 /mnt/FASTstorage/))&
+((rm -rf /mnt/FASTstorage/GithubFAST/escrita/Writing2)&&(cp -rv ~/Desktop/Writing2 /mnt/FASTstorage/GithubFAST/escrita/))&
+((rm -rf /mnt/FASTstorage/FASTprogs/webcrookedstuff/texts/Writing2)&&(cp -rv ~/Desktop/Writing2 /mnt/FASTstorage/FASTprogs/webcrookedstuff/texts/))&
 wait
+
+pushd /mnt/FASTstorage/GithubFAST/escrita && bash up* && popd
 echo "Done replacing Writing!!!!"
-
-
-
 
 
 
