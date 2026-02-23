@@ -1,0 +1,17 @@
+#!/bin/bash
+
+dwl &
+DWL_PID=$!
+
+# Wait for Wayland socket to exist
+while [ ! -S "$XDG_RUNTIME_DIR/wayland-0" ]; do
+    sleep 0.2
+done
+
+export WAYLAND_DISPLAY=wayland-0
+
+sleep 1
+
+wlr-randr --output eDP-1 --scale 1.5
+
+wait $DWL_PID
