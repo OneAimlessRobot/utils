@@ -130,9 +130,9 @@ pushd "${server_folder_to_backup}"
 
 ${build_command}
 
-rm "${server_mods_folder}/${modpack_archive_name}"
+rm "${server_jars_folder}/${modpack_archive_name}"
 
-cp "${mod_jar}" "${server_mods_folder}"
+cp "${mod_jar}" "${server_jars_folder}"
 
 
 rm -rfv "${writing_server_jars_folder}"
