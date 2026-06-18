@@ -111,16 +111,16 @@ cp "${mod_jar}" "${server_mods_folder}"
 
 popd
 
-#remove_server_folder_from_backup_locations
+remove_server_folder_from_backup_locations
 
-#copy_server_folder_to_backup_locations
+copy_server_folder_to_backup_locations
 
-#remove_client_mod_folder_from_backup_locations
+remove_client_mod_folder_from_backup_locations
 
-#copy_client_mod_folder_to_backup_locations
+copy_client_mod_folder_to_backup_locations
 
-#pushd "${github_repo_folder}"
+pushd "${github_repo_folder}"
 
-#bash ./up*sh
+bash ./up*sh
 
-#popd
+popd
