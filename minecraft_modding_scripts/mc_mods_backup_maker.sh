@@ -67,7 +67,7 @@ copy_server_folder_to_backup_locations(){
 
 	for(( i=0; i< num_of_server_backup_locations; i++ ))
 	do
-		cp -rfv  "${server_folder_to_backup}" "${root_folder_backup_locations[$i]}"&
+		cp -rfv  "${server_folder_to_backup}" "${root_server_folder_backup_locations[$i]}"&
 	done
 	wait
 }
