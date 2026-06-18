@@ -94,7 +94,7 @@ list_client_mod_files_in_backup_locations(){
 
 copy_client_mod_folder_to_backup_locations(){
 
-	for(( i=0; i< num_of_server_backup_locations; i++ ))
+	for(( i=0; i< num_of_client_mod_backup_locations; i++ ))
 	do
 		cp -rfv  "${client_mod_folder_to_backup}" "${client_mod_folder_backup_locations[$i]}"&
 	done
