@@ -33,7 +33,7 @@ git init
 touch ".gitkeep"
 touch "updateRepoMasterBranch.sh"
 echo "#!/bin/bash" >> "updateRepoMasterBranch.sh"
-echo "git add . && git commit -m "echo 'echo $(.randStringGenerator/randStringGenerator/randStringGenerator 10)'" && git push origin master" >> "updateRepoMasterBranch.sh"
+echo "git add . && git commit -m "echo '$( $(.randStringGenerator/randStringGenerator/randStringGenerator 10))'" && git push origin master" >> "updateRepoMasterBranch.sh"
 
 git add .
 git commit 
