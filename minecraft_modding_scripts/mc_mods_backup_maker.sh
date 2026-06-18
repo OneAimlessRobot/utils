@@ -24,7 +24,9 @@ client_mod_folder_backup_locations=("/home/addysmagic/Desktop/Writing2/Narrative
 
 client_mod_folder_to_backup="${parent_of_client_mod_folder}${client_mod_folder_name}"
 
-num_of_server_backup_locations=${#root_folder_backup_locations[@]}
+num_of_server_backup_locations=${#root_server_folder_backup_locations[@]}
+
+num_of_client_backup_locations=${#client_mod_folder_backup_locations[@]}
 
 
 remove_server_folder_from_backup_locations(){
