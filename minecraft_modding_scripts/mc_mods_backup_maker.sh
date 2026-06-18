@@ -5,9 +5,23 @@ parent_of_folder_to_backup="/mnt/SUPER_CAVALEIRO/eclipse_environment_for_minecra
 
 server_backup_folder_name="addysmods"
 
-server_folder_to_backup="${parent_of_folder_to_backup}${backup_folder_name}"
+server_folder_to_backup="${parent_of_folder_to_backup}${server_backup_folder_name}"
 
-mod_jars_regexp="build/libs/*.{jar}"
+server_mods_folder="/home/addysmagic/minecraft_servers_fast_storage/forge_1-12-2/mods"
+
+
+
+
+build_command="./gradlew build"
+
+modpack_archive_name="asem-1.3.jar"
+
+mod_jar="build/libs/${modpack_archive_name}"
+
+freshly_built_modpack_filepath="${server_folder_to_backup}/${mod_jar}"
+
+
+
 
 
 
@@ -87,17 +101,26 @@ copy_client_mod_folder_to_backup_locations(){
 	wait
 }
 
+pushd "${server_folder_to_backup}"
 
-remove_server_folder_from_backup_locations
+${build_command}
 
-copy_server_folder_to_backup_locations
+rm "${server_mods_folder}/${modpack_archive_name}"
 
-remove_client_mod_folder_from_backup_locations
-
-copy_client_mod_folder_to_backup_locations
-
-pushd "${github_repo_folder}"
-
-bash ./up*sh
+cp "${mod_jar}" "${server_mods_folder}"
 
 popd
+
+#remove_server_folder_from_backup_locations
+
+#copy_server_folder_to_backup_locations
+
+#remove_client_mod_folder_from_backup_locations
+
+#copy_client_mod_folder_to_backup_locations
+
+#pushd "${github_repo_folder}"
+
+#bash ./up*sh
+
+#popd
