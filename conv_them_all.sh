@@ -36,8 +36,9 @@ done
 
 for ((i=0;i<num_of_songs;i++));
 do
-	ffmpeg -i "${song_subdirectory}${song_basenames[i]}" -c:a libvorbis -q:a 4 "${destination_dir}${song_basenames[i]/%mp3/ogg}"
+	ffmpeg -i "${song_subdirectory}${song_basenames[i]}" -c:a libvorbis -q:a 4 "${destination_dir}${song_basenames[i]/%mp3/ogg}"&
 done
+wait
 
 echo "Done compiling all the songs!";
 
