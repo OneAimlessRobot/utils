@@ -48,7 +48,7 @@ pushd "${directory}"
 
 start_another_proc_func "pushd /mnt/SUPER_CAVALEIRO/progsBackup/http_server_final/server && ./server.exe && exec bash"
 
-start_another_proc_func "pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/code && bash kill*s.sh && bash startup.sh && exec bash"
+start_another_proc_func "pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/code  && exec bash"
 
 start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && bash launch*game*sh && exec bash"
 
