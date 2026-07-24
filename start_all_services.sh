@@ -48,7 +48,7 @@ pushd "${directory}"
 
 start_another_proc_func "pushd /mnt/SUPER_CAVALEIRO/progsBackup/http_server_final/server && ./server.exe && exec bash"
 
-start_another_proc_func "pushd /mnt/FASTstorage/Agariobackup/OgarII/cli && node ./index.js && exec bash"
+start_another_proc_func "pushd /mnt/FASTstorage/Agariobackup/MultiOgarII/src && node ./index.js && exec bash"
 
 start_another_proc_func "pushd /mnt/SUPER_CAVALEIRO/progsBackup/mysqlstuffpriv/amxmodxserver_mgmt/scripts && bash start*daemon*sh && exec bash"
 
@@ -56,6 +56,10 @@ start_another_proc_func "pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/
 
 start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && bash launch*game*sh && exec bash"
 
+start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && exec bash"
+
+start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && exec bash"
+ 
 start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && bash launch*prox*sh && exec bash"
 
 start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && bash launch*disp*sh && exec bash"
@@ -64,5 +68,6 @@ start_another_proc_func "pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/TmUnitedForeverSer
 
 start_another_proc_func "pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/xaseco && bash ./AsecoF.sh && exec bash"
 
+start_another_proc_func "PIPEWIRE_LATENCY=2048/48000 lutris -d && exec bash"
 
 cat "${tmp_pid_file}"
