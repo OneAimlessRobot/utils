@@ -61,10 +61,12 @@ start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && bash lau
 start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && exec bash"
 
 start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && exec bash"
- 
-start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && bash launch*prox*sh && exec bash"
 
 start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && bash launch*disp*sh && exec bash"
+
+sleep 5
+
+start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && bash launch*prox*sh && exec bash"
 
 start_another_proc_func "pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/TmUnitedForeverServer && bash Run*sh && exec bash"
 
