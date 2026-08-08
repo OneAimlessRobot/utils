@@ -50,7 +50,7 @@ start_another_proc_func "pushd /mnt/SUPER_CAVALEIRO/progsBackup/mysqlstuffpriv/a
 
 sleep 15
 
-start_another_proc_func "pushd /mnt/SUPER_CAVALEIRO/progsBackup/http_server_final/server && ./server.exe && exec bash"
+start_another_proc_func "pushd /mnt/SUPER_CAVALEIRO/progsBackup/http_server_final/server && bash server_start.sh && exec bash"
 
 start_another_proc_func "pushd /mnt/FASTstorage/Agariobackup/MultiOgarII/src && node ./index.js && exec bash"
 
@@ -64,6 +64,7 @@ start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && exec bas
 
 start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && bash launch*disp*sh && exec bash"
 
+
 sleep 5
 
 start_another_proc_func "pushd /mnt/REBORN/half_life_stuff/Half-Life && bash launch*prox*sh && exec bash"
@@ -72,6 +73,7 @@ start_another_proc_func "pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/TmUnitedForeverSer
 
 start_another_proc_func "pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/xaseco && bash ./AsecoF.sh && exec bash"
 
-start_another_proc_func "PIPEWIRE_LATENCY=2048/48000 lutris -d && exec bash"
+start_another_proc_func "lutris -d&"
+
 
 cat "${tmp_pid_file}"
