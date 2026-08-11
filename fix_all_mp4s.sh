@@ -8,6 +8,7 @@ expression_to_search="*"
 file_ext="mp4"
 video_basenames=()
 num_of_videos=0
+max_jobs=4
 
 fill_up_array(){
 	for filename in $(ls ${active_folder}/*${expression_to_search}*.${file_ext})
@@ -32,6 +33,10 @@ do_all_videos(){
 	for ((i=0;i<num_of_videos;i++));
 	do
 		fix_function "${video_basenames[i]}"&
+		
+		while [ "$(jobs -rp | wc -l)" -ge "$max_jobs" ]; do
+			wait -n
+		done
 	done
 	wait
 }
