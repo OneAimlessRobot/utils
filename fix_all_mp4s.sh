@@ -41,6 +41,7 @@ fix_function(){
 	filename_to_do=$1
 	echo "${active_folder}/${filename_to_do}.${file_ext}"
 	ffmpeg -i "${active_folder}/${filename_to_do}.${file_ext}" -c copy -movflags +faststart "${active_folder}/${filename_to_do}2.${file_ext}"
+	&&
 	mv "${active_folder}/${filename_to_do}2.${file_ext}" "${active_folder}/${filename_to_do}.${file_ext}"
 
 }
