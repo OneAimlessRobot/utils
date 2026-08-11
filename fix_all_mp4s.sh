@@ -3,7 +3,7 @@
 
 
 active_folder="$(pwd)"
-
+IFS=$'\n'
 expression_to_search="*"
 file_ext="mp4"
 video_basenames=()
@@ -11,7 +11,7 @@ num_of_videos=0
 max_jobs=4
 
 fill_up_array(){
-	for filename in $(ls ${active_folder}/*${expression_to_search}*.${file_ext})
+	for filename in $(ls -1 ${active_folder}/*${expression_to_search}*.${file_ext})
 	do
 		video_basenames[$num_of_videos]=$(basename $filename ".${file_ext}");
 		let num_of_videos=num_of_videos+1;
@@ -45,8 +45,8 @@ fix_function(){
 	
 	filename_to_do=$1
 	echo "${active_folder}/${filename_to_do}.${file_ext}"
-	ffmpeg -i "${active_folder}/${filename_to_do}.${file_ext}" -c copy -movflags +faststart "${active_folder}/${filename_to_do}2.${file_ext}"
-	&&
+	ffmpeg -i "${active_folder}/${filename_to_do}.${file_ext}" -c copy -movflags +faststart "${active_folder}/${filename_to_do}2.${file_ext}" \
+	&& \
 	mv "${active_folder}/${filename_to_do}2.${file_ext}" "${active_folder}/${filename_to_do}.${file_ext}"
 
 }
