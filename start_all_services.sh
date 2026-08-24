@@ -73,7 +73,7 @@ start_another_proc_func "pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/TmUnitedForeverSer
 
 start_another_proc_func "pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/xaseco && bash ./AsecoF.sh && exec bash"
 
-start_another_proc_func "lutris -d&"
+start_another_proc_func "lutris -d"
 
 
 cat "${tmp_pid_file}"
