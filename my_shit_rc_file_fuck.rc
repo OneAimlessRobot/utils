@@ -1,0 +1,7 @@
+#!/bin/bash
+source ~/.bashrc
+if [ -n "${START_COMMAND:-}" ]; then
+	cmd="$START_COMMAND"
+	unset START_COMMAND
+	eval "$cmd"
+fi

@@ -4,30 +4,20 @@ sleep_time=0.5
 
 directory=$(pwd)
 
-tmp_pid_file=".tmp_pids"
+tmp_session_file=".tmp_session_names_file"
 
-num_of_procs=$(wc -l < "${tmp_pid_file}")
+num_of_procs=$(wc -l < "${tmp_session_file}")
 
 echo "${num_of_procs}"
 
-loop_signal_at_process_func(){
-	limit="${3}"
-
-	for (( i=0; i<limit; i++ ));
-	do
-		pkill -"$2" -P "$1"
-	done
-}
 
 
-while read -r the_pid
+while read -r the_session
 do
-	echo "Trying to kill process of pid = $the_pid ..."
-	loop_signal_at_process_func "${the_pid}" 2 3
-	loop_signal_at_process_func "${the_pid}" 9 1
-	echo "Attempt made!"
+	echo "Trying to kill session of name = $the_session ..."
+	tmux kill-session -t "${the_session}"
 	sleep "${sleep_time}"
 
-done < "${tmp_pid_file}"
+done < "${tmp_session_file}"
 
-cat /dev/null > "${tmp_pid_file}"
+cat /dev/null > "${tmp_session_file}"
