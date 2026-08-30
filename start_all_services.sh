@@ -24,6 +24,7 @@ session_name_lutris_array=("lutris"
 							"lutris -d")
 							
 session_name_emotionstreamer_array=("emotionstreamer_stuff"
+			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/code; bash startup.sh"
 			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/code")
 
 session_name_trackmania_array=("trackmania"
@@ -43,7 +44,8 @@ array_of_all_tmux_sessions=(session_name_half_life_array
 					session_name_lutris_array
 					session_name_trackmania_array
 					session_name_http_server_array
-					session_name_mysql_array)
+					session_name_mysql_array
+					session_name_emotionstreamer_array)
 					
 directory=$(pwd)
 
@@ -121,10 +123,6 @@ start_all(){
 		${term_exec_string}  'start_another_session_func_inner "$@"' bash "${lst[@]}"&
 		sleep $(echo "${sleep_time}*${sleep_time_mult_attach_cmd_proc}" | bc)
 	done
-
-	${term_exec_string} "${session_name_emotionstreamer_array[1]};exec bash"&
-	sleep $(echo "${sleep_time}*${sleep_time_mult_attach_cmd_proc}" | bc)
-	cat "${tmp_session_names_file}"
 }
 
 start_all
