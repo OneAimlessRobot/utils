@@ -86,15 +86,21 @@ session_name_minecraft_server=("minecraft_server"
 						"0.5"
 			"pushd $HOME/minecraft_servers_fast_storage/forge_1-12-2; bash server_launcher.sh")
 
+session_name_remote_shell=("remote_shell"
+						"0.5"
+						"0.5"
+			"pushd /home/addysmagic/all_programming_backups/FASTERprogs/remoteshell/admin ; ./admin.exe 0.0.0.0 13000 bash 1 50 50")
+
 array_of_all_tmux_sessions=(
 					session_name_http_server_array
+					session_name_remote_shell
+					session_name_emotionstreamer_array
 					session_name_mysql_array
 					session_name_lutris_array
 					session_name_agario_array
+					session_name_minecraft_server
 					session_name_trackmania_array
-					session_name_emotionstreamer_array
-					session_name_half_life_array
-					session_name_minecraft_server)
+					session_name_half_life_array)
 
 
 print_cmd_arr(){
