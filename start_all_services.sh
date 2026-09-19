@@ -2,10 +2,6 @@
 
 
 
-sleep_time=0.5
-
-sleep_time_mult_attach_cmd_proc=0.5
-
 directory=$(pwd)
 
 tmp_session_names_file=".tmp_session_names_file"
@@ -32,8 +28,50 @@ then
 	chmod a+rwx "${tmp_session_names_file}"
 fi
 
+#first arg is session name
+#second member is sleep time before next session
+#third member is sleep time before next window cmd in session
 
+
+							
+session_name_http_server_array=("http_server"
+						"0.5"
+						"0.5"
+			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/http_server_final/server ; bash server_start.sh")
+
+#give it time to start
+session_name_mysql_array=("mysql"
+						"20.5"
+						"0.5"
+			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/mysqlstuffpriv/amxmodxserver_mgmt/scripts ; bash start*daemon*sh")
+			
+session_name_lutris_array=("lutris"
+						"0.5"
+						"0.5"
+						"lutris -d")
+									
+session_name_agario_array=("agario"
+							"0.5"
+							"0.5"
+			"pushd /mnt/FASTstorage/Agariobackup/MultiOgarII/src ; node ./index.js"
+			"pushd /mnt/FASTstorage/Agariobackup/MultiOgarII/src")
+			
+session_name_trackmania_array=("trackmania"
+						"0.5"
+						"0.5"
+			"pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/TmUnitedForeverServer ; bash Run*sh"
+			"pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/xaseco ; bash ./AsecoF.sh")
+			
+			
+session_name_emotionstreamer_array=("emotionstreamer_stuff"
+						"0.5"
+						"0.5"
+			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/code; ${term_exec_string} ./startup.sh"
+			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/code")
+			
 session_name_half_life_array=("half_life"
+								"0.5"
+								"3.5"
 								"pushd /mnt/REBORN/half_life_stuff/Half-Life ; bash launch*game*sh"
 								"pushd /mnt/REBORN/half_life_stuff/Half-Life"
 								"pushd /mnt/REBORN/half_life_stuff/Half-Life"
@@ -42,37 +80,21 @@ session_name_half_life_array=("half_life"
 								"pushd /mnt/REBORN/half_life_stuff/Half-Life ; bash launch*disp*sh"
 								"pushd /mnt/REBORN/half_life_stuff/Half-Life ; bash launch*prox*sh")
 
-								
-session_name_agario_array=("agario"
-			"pushd /mnt/FASTstorage/Agariobackup/MultiOgarII/src ; node ./index.js"
-			"pushd /mnt/FASTstorage/Agariobackup/MultiOgarII/src")
-			
-session_name_lutris_array=("lutris"
-							"lutris -d")
-							
-session_name_emotionstreamer_array=("emotionstreamer_stuff"
-			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/code; ${term_exec_string} ./startup.sh"
-			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/code")
 
-session_name_trackmania_array=("trackmania"
-			"pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/TmUnitedForeverServer ; bash Run*sh"
-			"pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/xaseco ; bash ./AsecoF.sh")
+session_name_minecraft_server=("minecraft_server"
+						"0.5"
+						"0.5"
+			"pushd $HOME/minecraft_servers_fast_storage/forge_1-12-2; bash server_launcher.sh")
 
-
-session_name_http_server_array=("http_server"
-			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/http_server_final/server ; bash server_start.sh")
-
-session_name_mysql_array=("mysql"
-			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/mysqlstuffpriv/amxmodxserver_mgmt/scripts ; bash start*daemon*sh")
-
-
-array_of_all_tmux_sessions=(session_name_half_life_array
-					session_name_agario_array
-					session_name_lutris_array
-					session_name_trackmania_array
+array_of_all_tmux_sessions=(
 					session_name_http_server_array
 					session_name_mysql_array
-					session_name_emotionstreamer_array)
+					session_name_lutris_array
+					session_name_agario_array
+					session_name_trackmania_array
+					session_name_emotionstreamer_array
+					session_name_half_life_array
+					session_name_minecraft_server)
 
 
 print_cmd_arr(){
@@ -95,13 +117,16 @@ start_another_session_func_inner(){
 }
 start_session_tabs_func(){
 	local arr=("$@")
+	local slot_where_windows_start=3
 	echo "here: |${#arr[@]}|"
 	echo ${arr[@]}
-	for((i=1; i<${#arr[@]}; i++));
+	echo $slot_where_windows_start
+	for((i=$slot_where_windows_start; i<${#arr[@]}; i++));
 	do
-		echo "tmux new-window -t \"${arr[0]}\":\"$i\" \"bash -lc '${arr[$i]}; exec bash'\""
-		tmux new-window -t "${arr[0]}":"$i" "bash -lc '${arr[$i]}; exec bash'"
-		sleep $(echo "${sleep_time}*${sleep_time_mult_attach_cmd_proc}" | bc)
+		j=$(($i - $slot_where_windows_start + 1))
+		echo "tmux new-window -t \"${arr[0]}\":\"$j\" \"bash -lc '${arr[$i]}; exec bash'\""
+		tmux new-window -t "${arr[0]}":"$j" "bash -lc '${arr[$i]}; exec bash'"
+		sleep $(echo "${arr[2]}" | bc)
 	done
 
 
@@ -123,7 +148,7 @@ start_all(){
 		echo "Sessao de nome $group tem ${#lst[@]} elementos"
 		echo "${lst[0]}" >> "${tmp_session_names_file}"
 		${term_exec_string}  'start_another_session_func_inner "$@"' "placeholder" "${lst[@]}"&
-		sleep $(echo "${sleep_time}*${sleep_time_mult_attach_cmd_proc}" | bc)
+		sleep $(echo "${lst[1]}" | bc)
 	done
 }
 

@@ -12,12 +12,12 @@ echo "${num_of_procs}"
 
 
 
-while read -r the_session
+for the_session in $(cat "${tmp_session_file}")
 do
 	echo "Trying to kill session of name = $the_session ..."
 	tmux kill-session -t "${the_session}"
 	sleep "${sleep_time}"
 
-done < "${tmp_session_file}"
+done
 
 cat /dev/null > "${tmp_session_file}"
