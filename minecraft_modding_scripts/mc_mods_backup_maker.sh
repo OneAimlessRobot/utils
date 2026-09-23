@@ -7,7 +7,7 @@ server_backup_folder_name="addysmods"
 
 server_folder_to_backup="${parent_of_folder_to_backup}${server_backup_folder_name}"
 
-server_jars_folder="/home/addysmagic/minecraft_servers_fast_storage/forge_1-12-2/mods"
+server_jars_folder="/home/addysmagic/minecraft_servers_fast_storage/forge_1-12-2_latest/mods"
 
 writing_server_jars_folder="/home/addysmagic/Desktop/Writing2/Narratives/ksun/persona/ksun_minecraft_stuff/server_stuff/mods"
 

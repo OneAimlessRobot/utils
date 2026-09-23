@@ -98,7 +98,6 @@ array_of_all_tmux_sessions=(
 					session_name_mysql_array
 					session_name_lutris_array
 					session_name_agario_array
-					session_name_minecraft_server
 					session_name_trackmania_array
 					session_name_half_life_array)
 
