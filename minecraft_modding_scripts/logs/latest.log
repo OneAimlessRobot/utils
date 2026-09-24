@@ -1,0 +1,900 @@
+[15:12:14] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[15:12:14] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLTweaker
+[15:12:14] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLTweaker
+[15:12:15] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2864 for Minecraft 1.12.2 loading
+[15:12:15] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_492, running on Linux:amd64:6.8.0-100-generic, installed at /usr/lib/jvm/java-8-openjdk-amd64/jre
+[15:12:15] [main/WARN] [FML]: The coremod FMLCorePlugin (net.minecraftforge.fml.relauncher.FMLCorePlugin) is not signed!
+[15:12:15] [main/WARN] [FML]: The coremod FMLForgePlugin (net.minecraftforge.classloading.FMLForgePlugin) is not signed!
+[15:12:15] [main/INFO] [FML]: Searching /home/addysmagic/.minecraft2/mods for mods
+[15:12:15] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in !configanytime-2.0.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:12:15] [main/WARN] [FML]: The coremod com.cleanroommc.configanytime.ConfigAnytimePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[15:12:15] [main/WARN] [FML]: The coremod ConfigAnytimePlugin (com.cleanroommc.configanytime.ConfigAnytimePlugin) is not signed!
+[15:12:15] [main/WARN] [FML]: The coremod zone.rong.mixinbooter.MixinBooterPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[15:12:15] [main/WARN] [FML]: The coremod MixinBooter (zone.rong.mixinbooter.MixinBooterPlugin) is not signed!
+[15:12:15] [main/INFO] [CleanMix]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/addysmagic/.minecraft2/mods/!mixinbooter-11.17.jar Service=MixinBooter Env=CLIENT
+[15:12:15] [main/INFO] [FML]: Searching /home/addysmagic/.minecraft2/mods for mods
+[15:12:19] [main/INFO] [MixinBooter]: Finished gathering 15 mods, took 3122 ms.
+[15:12:19] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in !Red-Core-MC-1.8-1.12-0.6.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:12:19] [main/INFO] [MixinBooter]: Initializing MixinExtras...
+[15:12:19] [main/WARN] [FML]: The coremod dev.redstudio.redcore.RedCorePlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[15:12:19] [main/WARN] [FML]: The coremod core (dev.redstudio.redcore.RedCorePlugin) is not signed!
+[15:12:19] [main/INFO] [FML]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from _MixinBootstrap-1.1.0.jar
+[15:12:19] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in Alfheim-1.6.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:12:19] [main/WARN] [FML]: The coremod AlfheimPlugin (dev.redstudio.alfheim.asm.AlfheimPlugin) is not signed!
+[15:12:19] [main/INFO] [FML]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from censoredasm5.19.jar
+[15:12:19] [main/INFO] [FML]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from EntityCulling-1.12.2-6.5.0.jar
+[15:12:19] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in Fixeroo-2.3.7.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:12:19] [main/WARN] [FML]: The coremod Fixeroo (surreal.fixeroo.core.FixerooPlugin) is not signed!
+[15:12:19] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in naughthirium-2.3.0.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:12:19] [main/WARN] [FML]: The coremod zone.rong.naughthirium.Naughthirium does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[15:12:19] [main/WARN] [FML]: The coremod Naughthirium (zone.rong.naughthirium.Naughthirium) is not signed!
+[15:12:19] [main/INFO] [FML]: Loading tweaker optifine.OptiFineForgeTweaker from OptiFine_1.12.2_HD_U_G5.jar
+[15:12:19] [main/INFO] [FML]: Loading tweaker org.spongepowered.asm.launch.MixinTweaker from RenderLib-1.12.2-1.4.5.jar
+[15:12:19] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in StellarCore-1.6.1.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:12:19] [main/INFO] [stellar_core]: [StellarEnvironment] Processor count: 4
+[15:12:19] [main/INFO] [stellar_core]: [StellarEnvironment] Parallel execution is enabled.
+[15:12:19] [main/WARN] [FML]: The coremod github.kasuminova.stellarcore.mixin.StellarCoreEarlyMixinLoader does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[15:12:19] [main/WARN] [FML]: The coremod StellarCoreEarlyMixinLoader (github.kasuminova.stellarcore.mixin.StellarCoreEarlyMixinLoader) is not signed!
+[15:12:19] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in UniversalTweaks-1.12.2-1.12.0.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:12:19] [main/WARN] [FML]: The coremod UniversalTweaksCore (mod.acgaming.universaltweaks.core.UTLoadingPlugin) is not signed!
+[15:12:19] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in vintagefix-0.7.1.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:12:19] [main/WARN] [FML]: The coremod VintageFix (org.embeddedt.vintagefix.core.VintageFixCore) is not signed!
+[15:12:19] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in xaerolib-forge-1.12.2-1.1.0.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:12:19] [main/WARN] [FML]: The coremod CorePlugin (xaero.lib.core.CorePlugin) is not signed!
+[15:12:19] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in xaerominimap-forge-1.12.2-26.1.0.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[15:12:19] [main/WARN] [FML]: The coremod XaeroMinimapPlugin (xaero.common.core.XaeroMinimapPlugin) is not signed!
+[15:12:19] [main/INFO] [LaunchWrapper]: Loading tweak class name zone.rong.mixinbooter.service.CoremodsRescuer
+[15:12:19] [main/WARN] [FML]: The coremod RenderLibPlugin (meldexun.renderlib.asm.RenderLibPlugin) is not signed!
+[15:12:19] [main/WARN] [MixinBooter]: RenderLib-1.12.2-1.4.5.jar declares both a TweakClass and FMLCorePlugin. Forge skips the coremod in this case and meldexun.renderlib.asm.RenderLibPlugin was loaded manually. Ship it as a normal coremod without a TweakClass.
+[15:12:19] [main/WARN] [FML]: The coremod LoliASM (zone.rong.loliasm.core.LoliLoadingPlugin) is not signed!
+[15:12:19] [main/INFO] [LoliASM]: Lolis are on the client-side.
+[15:12:19] [main/INFO] [LoliASM]: Lolis are preparing and loading in mixins since Rongmario's too lazy to write pure ASM at times despite the mod being called 'LoliASM'
+[15:12:19] [main/WARN] [LoliASM]: Replacing CA Certs with an updated one...
+[15:12:19] [main/INFO] [LoliASM]: Initializing StacktraceDeobfuscator...
+[15:12:19] [main/INFO] [LoliASM]: Found MCP stable-39 method mappings: methods-stable_39.csv
+[15:12:19] [main/INFO] [LoliASM]: Initialized StacktraceDeobfuscator.
+[15:12:19] [main/INFO] [LoliASM]: Installing DeobfuscatingRewritePolicy...
+[15:12:19] [main/INFO] [LoliASM]: Installed DeobfuscatingRewritePolicy.
+[15:12:19] [main/WARN] [MixinBooter]: censoredasm5.19.jar declares both a TweakClass and FMLCorePlugin. Forge skips the coremod in this case and zone.rong.loliasm.core.LoliLoadingPlugin was loaded manually. Ship it as a normal coremod without a TweakClass.
+[15:12:19] [main/WARN] [FML]: The coremod EntityCullingPlugin (meldexun.entityculling.asm.EntityCullingPlugin) is not signed!
+[15:12:19] [main/WARN] [MixinBooter]: EntityCulling-1.12.2-6.5.0.jar declares both a TweakClass and FMLCorePlugin. Forge skips the coremod in this case and meldexun.entityculling.asm.EntityCullingPlugin was loaded manually. Ship it as a normal coremod without a TweakClass.
+[15:12:19] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:12:19] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[15:12:19] [main/INFO] [LaunchWrapper]: Loading tweak class name org.spongepowered.asm.launch.MixinTweaker
+[15:12:19] [main/WARN] [LaunchWrapper]: Tweak class name org.spongepowered.asm.launch.MixinTweaker has already been visited -- skipping
+[15:12:19] [main/WARN] [LaunchWrapper]: Tweak class name org.spongepowered.asm.launch.MixinTweaker has already been visited -- skipping
+[15:12:19] [main/INFO] [LaunchWrapper]: Loading tweak class name optifine.OptiFineForgeTweaker
+[15:12:19] [main/WARN] [LaunchWrapper]: Tweak class name org.spongepowered.asm.launch.MixinTweaker has already been visited -- skipping
+[15:12:19] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[15:12:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:12:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[15:12:19] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:19] [main/INFO] [MixinBooter]: Loading config hijacker dev.redstudio.alfheim.asm.AlfheimPlugin.
+[15:12:19] [main/INFO] [MixinBooter]: Loading early loader dev.redstudio.alfheim.asm.AlfheimPlugin for its mixins.
+[15:12:19] [main/INFO] [MixinBooter]: Adding [mixins.alfheim.json] mixin configuration.
+[15:12:19] [main/INFO] [MixinBooter]: Loading early loader zone.rong.naughthirium.Naughthirium for its mixins.
+[15:12:19] [main/INFO] [MixinBooter]: Adding [mixins.naughthirium.json] mixin configuration.
+[15:12:19] [main/INFO] [MixinBooter]: Loading early loader mod.acgaming.universaltweaks.core.UTLoadingPlugin for its mixins.
+[15:12:19] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.misc.smoothlighting.json] mixin configuration.
+[15:12:19] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.misc.modelgap.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.buttons.anaglyph.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.items.itementities.client.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.toastcontrol.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.languageswitching.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.misc.depthmask.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.audioreload.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.buttons.realms.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.entities.autojump.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.misc.startup.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.gui.keybindlistentry.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.gui.potionduration.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.buttons.snooper.client.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.missingmodel.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.blocks.blockoverlay.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.gui.lanserverproperties.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.smoothscrolling.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.resourcemanager.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.misc.spectatormenu.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.world.frustumculling.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.connectionspeed.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.gui.ping.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.blocks.miningglitch.client.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.elytrarender.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.elytra.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.fps.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.misc.potionamplifier.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.entitylists.client.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.villagermantle.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.misc.particlespawning.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.blocks.itemframevoid.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.blocks.endportal.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.entities.burning.mobs.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.entityradiuscheck.reducesearchsize.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.tracker.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.world.tileentities.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.blocks.leafdecay.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.destroypacket.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.world.witchhuts.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.entities.burning.horse.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.maxhealth.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.entities.ai.saddledwandering.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.world.chunksaving.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.incurablepotions.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.blocks.lenientpaths.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.skeletonaim.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.misc.packetsize.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.world.stronghold.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.blocks.hopper.boundingbox.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.sleeping.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.horsefalling.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.pathfinding.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.entities.spawning.husk.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.blocks.piston.tile.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.entities.taming.horse.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.blockfire.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.commands.seed.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.entityradiuscheck.lesscollisions.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.prefixcheck.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.dimensionchange.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.blocks.bedobstruction.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.entitylists.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.misc.crafteditemstatistics.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.untippedarrowparticles.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.blocks.ladderflying.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.minecart.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.entities.despawning.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.suffocation.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.misc.console.addpacket.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.desync.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.dyeblending.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.blocks.sapling.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.boundingbox.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.deathtime.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.blocks.comparatortiming.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.blocks.miningglitch.server.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.entities.spawning.stray.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.entities.ai.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.attackradius.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.boatoffset.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.mount.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.blocks.hopper.tile.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.saturation.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.blocks.falling.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.items.itementities.server.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bugfixes.entities.entityid.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.tweaks.performance.craftingcache.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Loading early loader org.embeddedt.vintagefix.core.VintageFixCore for its mixins.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.vintagefix.init.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.vintagefix.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Loading early loader zone.rong.loliasm.core.LoliLoadingPlugin for its mixins.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.devenv.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.internal.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.vanities.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.registries.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.stripitemstack.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.lockcode.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.recipes.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.misc_fluidregistry.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.forgefixes.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.capability.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.efficienthashing.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.crashes.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.fix_mc129057.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.bucket.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.priorities.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.rendering.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.datastructures_modelmanager.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.screenshot.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.ondemand_sprites.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.searchtree_vanilla.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.resolve_mc2071.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.fix_mc_skindownloading.json] mixin configuration.
+[15:12:20] [main/INFO] [MixinBooter]: Adding [mixins.fix_mc186052.json] mixin configuration.
+[15:12:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:20] [main/INFO] [LaunchWrapper]: Calling tweak class optifine.OptiFineForgeTweaker
+[15:12:20] [main/INFO] [STDOUT]: [optifine.OptiFineForgeTweaker:dbg:56]: OptiFineForgeTweaker: acceptOptions
+[15:12:20] [main/INFO] [STDOUT]: [optifine.OptiFineForgeTweaker:dbg:56]: OptiFineForgeTweaker: injectIntoClassLoader
+[15:12:20] [main/INFO] [STDOUT]: [optifine.OptiFineClassTransformer:dbg:242]: OptiFine ClassTransformer
+[15:12:20] [main/INFO] [STDOUT]: [optifine.OptiFineClassTransformer:dbg:242]: OptiFine ZIP file: /home/addysmagic/.minecraft2/mods/OptiFine_1.12.2_HD_U_G5.jar
+[15:12:20] [main/INFO] [LaunchWrapper]: Calling tweak class zone.rong.mixinbooter.service.CoremodsRescuer
+[15:12:20] [main/WARN] [MixinBooter]: Retrieving tweak class meldexun.renderlib.asm.RenderLibTweaker added by a rescued coremod.
+[15:12:20] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:24] [main/INFO] [FML]: Found valid fingerprint for Minecraft. Certificate fingerprint cd99959656f753dc28d863b46769f7f8fbaefcfc
+[15:12:24] [main/ERROR] [FML]: FML appears to be missing any signature data. This is not a good thing
+[15:12:24] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:24] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:24] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:24] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:24] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_advancements.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_bakedmodel.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_bakedquad.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_blockfaceuv.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_blockpart.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_blockstateimpl.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_chunktecache.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_chunktemap.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_chunktequeue.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_classmultimap.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_entitytracker.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_entitytracker_y_range.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_itemstack_cap.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_longnbtkiller.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_modelblock.json is disabled by config or mod is not loaded.
+[15:12:24] [main/WARN] [stellar_core]: ************************************************************************************************************
+[15:12:24] [main/WARN] [stellar_core]: *
+[15:12:24] [main/WARN] [stellar_core]: * CensoredASM option `optimizeNBTTagCompoundBackingMap` or `nbtBackingMapStringCanonicalization` is enabled.
+[15:12:24] [main/WARN] [stellar_core]: * This is not compatible with StellarCore's `NBTTagCompoundMapImprovements`.
+[15:12:24] [main/WARN] [stellar_core]: *
+[15:12:24] [main/WARN] [stellar_core]: * StellarCore now will automatic disable `NBTTagCompoundMapImprovements`.
+[15:12:24] [main/WARN] [stellar_core]: *
+[15:12:24] [main/WARN] [stellar_core]: ************************************************************************************************************
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_nbtmaplist.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_nbtpool.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_nethandlerplayserver.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_nnlist.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_noglerror.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_property.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_phys.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_randomtick.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_renderglobal.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_resourcelocation.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_resourcelocation_async.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_resourcepack.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_resourcepack_frp.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_world.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_world_load.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_world_pos_judgement.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_worldclient.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_worldserver.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_statemapperbase.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_stitcher.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_minecraft_texture_load.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_minecraft_texturemap_concurrent.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_forge.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_forge_asmdatatable.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_forge_asmmodparser.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_forge_bakedquad.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_forge_bakedquad_vertexdata.json is disabled by config or mod is not loaded.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_forge_capability.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_forge_chunkmanager.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_forge_modelloader.json to mixin configuration.
+[15:12:24] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Adding mixins.stellar_core_forge_oredict.json to mixin configuration.
+[15:12:25] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_forge_registry.json is disabled by config or mod is not loaded.
+[15:12:25] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_hudcaching.json is disabled by config or mod is not loaded.
+[15:12:25] [main/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_ebwizardry_early.json is disabled by config or mod is not loaded.
+[15:12:25] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:25] [main/INFO] [VintageFix]: Loading JarDiscovererCache
+[15:12:25] [main/INFO] [MixinExtras|Service]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[15:12:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:26] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.mixin.EnvironmentStateTweaker
+[15:12:26] [main/INFO] [LaunchWrapper]: Calling tweak class org.spongepowered.asm.launch.MixinTweaker
+[15:12:26] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[15:12:26] [main/INFO] [LoliASM]: The lolis are now preparing to bytecode manipulate your game.
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.block.model.BakedQuad to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.audio.SoundEventAccessor to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.audio.SoundRegistry to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraftforge.client.model.ModelLoader to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.block.statemap.StateMapperBase to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.BlockModelShapes to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.block.statemap.BlockStateMapper to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.RenderGlobal to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.RenderHelper to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.texture.TextureAtlasSprite to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.Minecraft to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.network.NetHandlerPlayClient to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.RenderGlobal to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.chunk.RenderChunk to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.util.registry.RegistrySimple to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.nbt.NBTTagString to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraftforge.fml.common.discovery.ModCandidate to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraftforge.fml.common.discovery.ASMDataTable$ASMData to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.item.ItemStack to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.item.crafting.FurnaceRecipes to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class hellfirepvp.astralsorcery.common.enchantment.amulet.PlayerAmuletHandler to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class mezz.jei.suffixtree.Edge to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class betterwithmods.event.BlastingOilEvent to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class betterwithmods.common.items.ItemMaterial to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class lach_01298.qmd.render.entity.BeamRenderer to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.dries007.tfc.objects.entity.EntityFallingBlockTFC to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.item.ItemStack to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.EntityRenderer to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.client.renderer.EntityRenderer to the transformation queue
+[15:12:26] [main/INFO] [LoliASM]: Adding class net.minecraft.nbt.NBTTagCompound to the transformation queue
+[15:12:26] [main/WARN] [MixinExtras|Service]: Accepting package org.embeddedt.vintagefix.mixinextras offered to com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5) after initialization.The MixinExtras instance which offered it bootstrapped too lateand anything already transformed will not be aware of it.
+[15:12:26] [main/WARN] [MixinExtras|Service]: Accepting extension org.embeddedt.vintagefix.mixinextras.transformer.MixinTransformerExtension offered to com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5) after initialization.The MixinExtras instance which offered it bootstrapped too lateand anything already transformed will not be aware of it.
+[15:12:26] [main/WARN] [MixinExtras|Service]: Accepting extension org.embeddedt.vintagefix.mixinextras.service.ServiceInitializationExtension offered to com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5) after initialization.The MixinExtras instance which offered it bootstrapped too lateand anything already transformed will not be aware of it.
+[15:12:26] [main/WARN] [MixinExtras|Service]: Accepting extension org.embeddedt.vintagefix.mixinextras.injector.LateInjectionApplicatorExtension offered to com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5) after initialization.The MixinExtras instance which offered it bootstrapped too lateand anything already transformed will not be aware of it.
+[15:12:26] [main/WARN] [MixinExtras|Service]: Accepting extension org.embeddedt.vintagefix.mixinextras.sugar.impl.SugarPostProcessingExtension offered to com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5) after initialization.The MixinExtras instance which offered it bootstrapped too lateand anything already transformed will not be aware of it.
+[15:12:26] [main/WARN] [MixinExtras|Service]: Accepting injector org.embeddedt.vintagefix.mixinextras.injector.ModifyExpressionValueInjectionInfo offered to com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5) after initialization.The MixinExtras instance which offered it bootstrapped too lateand anything already transformed will not be aware of it.
+[15:12:26] [main/WARN] [MixinExtras|Service]: Accepting injector org.embeddedt.vintagefix.mixinextras.injector.ModifyReceiverInjectionInfo offered to com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5) after initialization.The MixinExtras instance which offered it bootstrapped too lateand anything already transformed will not be aware of it.
+[15:12:26] [main/WARN] [MixinExtras|Service]: Accepting injector org.embeddedt.vintagefix.mixinextras.injector.ModifyReturnValueInjectionInfo offered to com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5) after initialization.The MixinExtras instance which offered it bootstrapped too lateand anything already transformed will not be aware of it.
+[15:12:26] [main/WARN] [MixinExtras|Service]: Accepting injector org.embeddedt.vintagefix.mixinextras.injector.wrapoperation.WrapOperationInjectionInfo offered to com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5) after initialization.The MixinExtras instance which offered it bootstrapped too lateand anything already transformed will not be aware of it.
+[15:12:26] [main/WARN] [MixinExtras|Service]: Accepting injector org.embeddedt.vintagefix.mixinextras.injector.WrapWithConditionV1InjectionInfo offered to com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5) after initialization.The MixinExtras instance which offered it bootstrapped too lateand anything already transformed will not be aware of it.
+[15:12:26] [main/WARN] [CleanMix]: Reference map '' for mixins.vintagefix.init.json could not be read. If this is a development environment you can ignore this message
+[15:12:27] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[15:12:27] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[15:12:27] [main/INFO] [LaunchWrapper]: Loading tweak class name meldexun.renderlib.asm.RenderLibTweaker
+[15:12:27] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[15:12:27] [main/INFO] [LaunchWrapper]: Calling tweak class meldexun.renderlib.asm.RenderLibTweaker
+[15:12:27] [main/INFO] [STDOUT]: [optifine.OptiFineForgeTweaker:dbg:56]: OptiFineForgeTweaker: getLaunchArguments
+[15:12:28] [main/INFO] [VintageFix Mixin Loader]: Found 97 mixins
+[15:12:28] [main/INFO] [VintageFix Mixin Loader]: Successfully saved config file
+[15:12:29] [main/ERROR] [CleanMix]: Critical problem: mixins.stellar_core_forge_asmmodparser.json:MixinASMModParser from mod stellarcore target net.minecraftforge.fml.common.discovery.asm.ASMModParser was loaded too early.
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.version_protest.MinecraftMixin' as 'mixin.version_protest' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.version_protest.FMLCommonHandlerMixin' as 'mixin.version_protest' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.resourcepacks.MixinResourceIndex' as 'mixin.resourcepacks' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.resourcepacks.MixinFolderResourcePack' as 'mixin.resourcepacks' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.resourcepacks.MixinFileResourcePack' as 'mixin.resourcepacks' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.resourcepacks.MixinFallbackResourceManager' as 'mixin.resourcepacks' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.resourcepacks.MixinDefaultResourcePack' as 'mixin.resourcepacks' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.resourcepacks.MixinAbstractResourcePack' as 'mixin.resourcepacks' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinWeightedRandomModel' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinVariantLoader' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinVanillaModelWrapper' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinTextureMap' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinTRSRTransformation' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinSimpleReloadableResourceManager' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinRenderItem' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinModelManager' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinModelLoaderRegistry' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinModelLoader' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinModelBakeEvent' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinLightUtil' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinItemModelMesherForge' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinItemLayerModel' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinFMLClientHandler' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinBlockStateBase' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinBlockModelShapes' as 'mixin.dynamic_resources' is disabled in config
+[15:12:29] [main/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.FaceDataMixin' as 'mixin.dynamic_resources' is disabled in config
+[15:12:30] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.client.main.Main}
+[15:12:31] [main/INFO] [Fixeroo]: Transforming net.minecraft.tileentity.TileEntity
+[15:12:31] [main/INFO] [STDOUT]: [xaero.lib.core.transformer.ClassNodeTransformer:transform:29]: Transforming class bsb net.minecraft.client.multiplayer.WorldClient
+[15:12:31] [main/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class bsb net.minecraft.client.multiplayer.WorldClient
+[15:12:31] [main/INFO] [STDOUT]: [xaero.lib.core.transformer.ClassNodeTransformer:transform:29]: Transforming class bsb net.minecraft.client.multiplayer.WorldClient
+[15:12:31] [main/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class bsb net.minecraft.client.multiplayer.WorldClient
+[15:12:31] [main/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class bud net.minecraft.client.entity.EntityPlayerSP
+[15:12:31] [main/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class bua net.minecraft.client.entity.AbstractClientPlayer
+[15:12:31] [main/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class aed net.minecraft.entity.player.EntityPlayer
+[15:12:31] [main/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class bud net.minecraft.client.entity.EntityPlayerSP
+[15:12:31] [main/INFO] [Fixeroo]: Transforming net.minecraft.client.entity.EntityPlayerSP
+[15:12:32] [main/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class bua net.minecraft.client.entity.AbstractClientPlayer
+[15:12:32] [main/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class aed net.minecraft.entity.player.EntityPlayer
+[15:12:32] [main/INFO] [Fixeroo]: Transforming net.minecraft.entity.player.EntityPlayer
+[15:12:32] [main/INFO] [STDOUT]: [xaero.lib.core.transformer.ClassNodeTransformer:transform:29]: Transforming class oq net.minecraft.entity.player.EntityPlayerMP
+[15:12:32] [main/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class oq net.minecraft.entity.player.EntityPlayerMP
+[15:12:32] [main/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class net.minecraftforge.client.GuiIngameForge net.minecraftforge.client.GuiIngameForge
+[15:12:32] [StellarCore-LowerCaseStringPool-CanonicalizeWorker/INFO] [stellar_core]: [StellarCore-LowerCaseStringPool] CanonicalizeWorker started.
+[15:12:33] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class net.minecraft.server.MinecraftServer net.minecraft.server.MinecraftServer
+[15:12:33] [Client thread/INFO] [ASMUtil]: Transforming class net/minecraft/server/MinecraftServer
+[15:12:33] [Client thread/INFO] [ASMUtil]: Transforming class net/minecraft/server/MinecraftServer
+[15:12:33] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class net.minecraft.server.MinecraftServer net.minecraft.server.MinecraftServer
+[15:12:33] [Client thread/INFO] [ASMUtil]: Transforming class net/minecraft/server/MinecraftServer
+[15:12:33] [Client thread/INFO] [ASMUtil]: Transforming class net/minecraft/server/MinecraftServer
+[15:12:34] [Client thread/INFO] [net.minecraft.client.Minecraft]: Setting user: LenaDeVerias
+[15:12:35] [Client thread/INFO] [Fixeroo]: Transforming net.minecraft.entity.item.EntityXPOrb
+[15:12:35] [Client thread/WARN] [CleanMix]: Method overwrite conflict for hashCode in mixins.vintagefix.json:blockstates.FastMapStateHolderMixin from mod vintagefix, previously written by github.kasuminova.stellarcore.mixin.minecraft.blockstateimpl.MixinStateImplementation. Skipping method.
+[15:12:36] [Client thread/INFO] [VintageFix - class definer]: Using Java 8 class definer
+[15:12:36] [Client thread/INFO] [Fixeroo]: Transforming net.minecraft.tileentity.TileEntity
+[15:12:37] [Client thread/INFO] [Fixeroo]: Transforming net.minecraft.block.BlockPumpkin
+[15:12:37] [Client thread/WARN] [FML]: Patcher expecting empty class data file for net.minecraft.block.state.BlockStateContainer$Builder, but received non-empty
+[15:12:38] [Client thread/INFO] [STDOUT]: [xaero.lib.core.transformer.ClassNodeTransformer:transform:29]: Transforming class oq net.minecraft.entity.player.EntityPlayerMP
+[15:12:38] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class oq net.minecraft.entity.player.EntityPlayerMP
+[15:12:41] [Client thread/INFO] [stellar_core]: [StellarCore-NBTTagPrimitivePool] PrimitiveType NBTTagPrimitivePool initialized, took 333ms.
+[15:12:41] [Client thread/INFO] [LoliASM]: Improving FurnaceRecipes. Lookups are now a lot faster.
+[15:12:41] [Client thread/INFO] [LoliASM]: Improving FurnaceRecipes. Lookups are now a lot faster.
+[15:12:41] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class bhy net.minecraft.client.settings.KeyBinding
+[15:12:41] [Client thread/INFO] [net.optifine.reflect.Reflector]: [OptiFine] *** Reflector Forge ***
+[15:12:42] [Client thread/INFO] [net.optifine.reflect.Reflector]: [OptiFine] *** Reflector Vanilla ***
+[15:12:42] [Client thread/WARN] [CleanMix]: @Final field field_73236_b:Lit/unimi/dsi/fastutil/longs/Long2ObjectMap; in mixins.vintagefix.json:chunk_access.ChunkProviderClientMixin from mod vintagefix should be final
+[15:12:42] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class brs net.minecraft.client.model.ModelRenderer
+[15:12:42] [Client thread/INFO] [Fixeroo]: Transforming net.minecraft.client.model.ModelBiped
+[15:12:43] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[15:12:43] [Client thread/INFO] [net.minecraft.client.Minecraft]: LWJGL Version: 2.9.4
+[15:12:43] [Client thread/INFO] [renderlib]: OpenGL Debug: supported=OpenGL43, enabled=true
+[15:12:43] [Client thread/INFO] [Config]: [OptiFine] 
+[15:12:43] [Client thread/INFO] [Config]: [OptiFine] OptiFine_1.12.2_HD_U_G5
+[15:12:43] [Client thread/INFO] [Config]: [OptiFine] Build: 20210124-142939
+[15:12:43] [Client thread/INFO] [Config]: [OptiFine] OS: Linux (amd64) version 6.8.0-100-generic
+[15:12:43] [Client thread/INFO] [Config]: [OptiFine] Java: 1.8.0_492, Private Build
+[15:12:43] [Client thread/INFO] [Config]: [OptiFine] VM: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+[15:12:43] [Client thread/INFO] [Config]: [OptiFine] LWJGL: 2.9.4
+[15:12:43] [Client thread/INFO] [Config]: [OptiFine] OpenGL: Mesa Intel(R) Iris(R) Graphics 6100 (BDW GT3), version 4.6 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.2, Intel
+[15:12:43] [Client thread/INFO] [Config]: [OptiFine] OpenGL Version: 4.6.0
+[15:12:43] [Client thread/INFO] [Config]: [OptiFine] Maximum texture size: 16384x16384
+[15:12:43] [VersionCheck/INFO] [Config]: [OptiFine] Checking for new version
+[15:12:43] [Client thread/INFO] [net.optifine.shaders.SMCLog]: [Shaders] OpenGL Version: 4.6 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.2
+[15:12:43] [Client thread/INFO] [net.optifine.shaders.SMCLog]: [Shaders] Vendor:  Intel
+[15:12:43] [Client thread/INFO] [net.optifine.shaders.SMCLog]: [Shaders] Renderer: Mesa Intel(R) Iris(R) Graphics 6100 (BDW GT3)
+[15:12:43] [Client thread/INFO] [net.optifine.shaders.SMCLog]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
+[15:12:43] [Client thread/INFO] [net.optifine.shaders.SMCLog]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
+[15:12:43] [Client thread/INFO] [net.optifine.shaders.SMCLog]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
+[15:12:43] [Client thread/INFO] [net.optifine.shaders.SMCLog]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[15:12:43] [Client thread/INFO] [net.optifine.shaders.SMCLog]: [Shaders] Load shaders configuration.
+[15:12:43] [Client thread/INFO] [net.optifine.shaders.SMCLog]: [Shaders] Shaders can not be loaded, Fast Render is enabled.
+[15:12:43] [Client thread/INFO] [net.optifine.shaders.SMCLog]: [Shaders] No shaderpack loaded.
+[15:12:44] [Client thread/INFO] [Config]: [OptiFine] [Shaders] Delayed loading of block mappings after resources are loaded
+[15:12:44] [Client thread/INFO] [Config]: [OptiFine] [Shaders] Delayed loading of item mappings after resources are loaded
+[15:12:44] [Client thread/INFO] [Config]: [OptiFine] [Shaders] Delayed loading of entity mappings after resources are loaded
+[15:12:44] [VersionCheck/INFO] [Config]: [OptiFine] Version found: G5
+[15:12:44] [Client thread/INFO] [FML]: Forge Mod Loader has detected optifine OptiFine_1.12.2_HD_U_G5, enabling compatibility features
+[15:12:44] [Client thread/INFO] [FML]: -- System Details --
+  Minecraft Version: 1.12.2
+  Operating System: Linux (amd64) version 6.8.0-100-generic
+  Java Version: 1.8.0_492, Private Build
+  Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Private Build
+  Memory: 261178832 bytes (249 MB) / 671088640 bytes (640 MB) up to 1073741824 bytes (1024 MB)
+  JVM Flags: 7 total; -Xmx1G -XX:+UnlockExperimentalVMOptions -XX:+UseG1GC -XX:G1NewSizePercent=20 -XX:G1ReservePercent=20 -XX:MaxGCPauseMillis=50 -XX:G1HeapRegionSize=32M
+  IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+  FML: 
+  Loaded coremods (and transformers): LoliASM (censoredasm5.19.jar)
+                                        
+                                      UniversalTweaksCore (UniversalTweaks-1.12.2-1.12.0.jar)
+                                        
+                                      StellarCoreEarlyMixinLoader (StellarCore-1.6.1.jar)
+                                        
+                                      AlfheimPlugin (Alfheim-1.6.jar)
+                                        
+                                      core (!Red-Core-MC-1.8-1.12-0.6.jar)
+                                        
+                                      XaeroMinimapPlugin (xaerominimap-forge-1.12.2-26.1.0.jar)
+                                        xaero.common.core.transformer.ChunkTransformer
+                                        xaero.common.core.transformer.NetHandlerPlayClientTransformer
+                                        xaero.common.core.transformer.EntityPlayerTransformer
+                                        xaero.common.core.transformer.AbstractClientPlayerTransformer
+                                        xaero.common.core.transformer.WorldClientTransformer
+                                        xaero.common.core.transformer.EntityPlayerMPTransformer
+                                        xaero.common.core.transformer.EntityPlayerSPTransformer
+                                        xaero.common.core.transformer.PlayerListTransformer
+                                        xaero.common.core.transformer.SaveFormatTransformer
+                                        xaero.common.core.transformer.GuiIngameForgeTransformer
+                                        xaero.common.core.transformer.KeyBindingTransformer
+                                        xaero.common.core.transformer.MinecraftServerTransformer
+                                        xaero.common.core.transformer.ModelRendererTransformer
+                                      RenderLibPlugin (RenderLib-1.12.2-1.4.5.jar)
+                                        
+                                      MixinBooter (!mixinbooter-11.17.jar)
+                                        
+                                      Naughthirium (naughthirium-2.3.0.jar)
+                                        
+                                      CorePlugin (xaerolib-forge-1.12.2-1.1.0.jar)
+                                        xaero.lib.core.transformer.PlayerListTransformer
+                                        xaero.lib.core.transformer.EntityPlayerMPTransformer
+                                        xaero.lib.core.transformer.NetHandlerPlayClientTransformer
+                                        xaero.lib.core.transformer.WorldClientTransformer
+                                      VintageFix (vintagefix-0.7.1.jar)
+                                        org.embeddedt.vintagefix.transformer.ASMModParserTransformer
+                                      ConfigAnytimePlugin (!configanytime-2.0.jar)
+                                        
+                                      EntityCullingPlugin (EntityCulling-1.12.2-6.5.0.jar)
+                                        
+                                      Fixeroo (Fixeroo-2.3.7.jar)
+  GL info: ' Vendor: 'Intel' Version: '4.6 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.2' Renderer: 'Mesa Intel(R) Iris(R) Graphics 6100 (BDW GT3)'
+  Suspected Mods: Unknown
+
+[15:12:44] [Client thread/INFO] [FML]: MinecraftForge v14.23.5.2864 Initialized
+[15:12:44] [Client thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[15:12:45] [Client thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[15:12:45] [Client thread/INFO] [FML]: Replaced 1227 ore ingredients
+[15:12:45] [Client thread/INFO] [FML]: Searching /home/addysmagic/.minecraft2/mods for mods
+[15:12:46] [Client thread/WARN] [FML]: Mod entityculling is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 6.5.0
+[15:12:46] [Client thread/WARN] [FML]: Mod renderlib is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 1.4.5
+[15:12:46] [Client thread/WARN] [FML]: Mod xaerolib is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 1.1.0
+[15:12:46] [Client thread/WARN] [FML]: Mod xaerominimap is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 26.1.0
+[15:12:46] [Client thread/INFO] [FML]: Forge Mod Loader has identified 20 mods to load
+[15:12:46] [Client thread/INFO] [FML]: FML has found a non-mod file asmutil-2.8.1-sources.jar in your mods directory. It will now be injected into your classpath. This could severe stability issues, it should be removed if possible.
+[15:12:46] [Client thread/INFO] [FML]: FML has found a non-mod file asmutil-2.8.1.jar in your mods directory. It will now be injected into your classpath. This could severe stability issues, it should be removed if possible.
+[15:12:46] [Client thread/INFO] [FML]: FML has found a non-mod file naughthirium-2.3.0.jar in your mods directory. It will now be injected into your classpath. This could severe stability issues, it should be removed if possible.
+[15:12:46] [Client thread/INFO] [MixinBooter]: Loading late loader [mod.acgaming.universaltweaks.core.UTMixinLoader] for its mixins.
+[15:12:46] [Client thread/INFO] [MixinBooter]: Loading late loader [github.kasuminova.stellarcore.mixin.StellarCoreLateMixinLoader] for its mixins.
+[15:12:46] [Client thread/INFO] [MixinBooter]: Loading late loader [org.embeddedt.vintagefix.core.LateMixins] for its mixins.
+[15:12:46] [Client thread/INFO] [MixinBooter]: Loading late loader [zone.rong.loliasm.core.LoliLateMixinLoader] for its mixins.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_advancedrocketry.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_ae.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_armourers_workshop.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_astralsorcery.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_avaritia.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_avaritiaddons.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_betterchat.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_biomesoplenty.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_bloodmagic.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_botania.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_cfm.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_chisel.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_cofhcore.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_ctm.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_cucumber.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_customloadingscreen.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_customstartinggear.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_deepmoblearing.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_draconicevolution.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_ebwizardry.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_endercore.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_enderio.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_enderioconduits.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_enderioconduits_energy.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_enderutilities.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_extrabotany.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_fluxnetworks.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_ftblib.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_ftbquests.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_geckolib.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_guguutils.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_ic2.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_ic2_energynet.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_igi.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_immersiveengineering.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_jei.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_threng.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_legendarytooltips.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_libnine.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_mek_top.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_mekanism.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_mets.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_modularrouters.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_nco.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_psi.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_rgb_chat.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_resourceloader.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_scalingguis.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_specialmobs.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_sync.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_sync_techguns.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_tconevo.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_tconstruct.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_techguns.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_theoneprobe.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_thermaldynamics.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_thermalexpansion.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [stellar_core]: [StellarCore-MixinLoader] Mixin config mixins.stellar_core_touhou_little_maid.json is disabled by config or mod is not loaded.
+[15:12:46] [Client thread/INFO] [MixinBooter]: Adding [mixins.stellar_core_vintagefix.json] mixin configuration.
+[15:12:46] [Client thread/INFO] [MixinBooter]: Adding [mixins.vintagefix.late.json] mixin configuration.
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.resourcepacks.MixinNormalResourceLoader' as 'mixin.resourcepacks' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.resourcepacks.MixinDirectoryResourcePack' as 'mixin.resourcepacks' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.VoxelBlobMixin' as 'mixin.dynamic_resources' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.Traverse2TexturesMixin' as 'mixin.dynamic_resources' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinModelLoaderEarlyViewDebark' as 'mixin.dynamic_resources' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinModelLoaderEarlyView' as 'mixin.dynamic_resources' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinModelHelper' as 'mixin.dynamic_resources' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinHammerRenderProxy' as 'mixin.dynamic_resources' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinCustomTextureCreator' as 'mixin.dynamic_resources' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinCustomBetweenlandsModels' as 'mixin.dynamic_resources' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.MixinAbstractCTMBakedModel' as 'mixin.dynamic_resources' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.CTMProfileUtilMixin' as 'mixin.dynamic_resources' is disabled in config
+[15:12:46] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'org.embeddedt.vintagefix.mixin.dynamic_resources.BakedToolModelListMixin' as 'mixin.dynamic_resources' is disabled in config
+[15:12:47] [Thread-3/INFO] [FML]: Using sync timing. 200 frames of Display.update took 477067714 nanos
+[15:12:47] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, mixinbooter, FML, forge, naughthirium, xaerolib_core, xaerominimap_core, configanytime, redcore, alfheim, loliasm, entityculling, xporbclump, renderlib, stellar_core, universaltweaks, vintagefix, xaerolib, xaerominimap] at CLIENT
+[15:12:47] [Client thread/INFO] [FML]: Attempting connection with missing mods [minecraft, mcp, mixinbooter, FML, forge, naughthirium, xaerolib_core, xaerominimap_core, configanytime, redcore, alfheim, loliasm, entityculling, xporbclump, renderlib, stellar_core, universaltweaks, vintagefix, xaerolib, xaerominimap] at SERVER
+[15:12:48] [Client thread/INFO] [renderlib]: OpenGL Vendor: Intel
+[15:12:48] [Client thread/INFO] [renderlib]: OpenGL Renderer: Mesa Intel(R) Iris(R) Graphics 6100 (BDW GT3)
+[15:12:48] [Client thread/INFO] [renderlib]: OpenGL Version: 4.6 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.2
+[15:12:49] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'mixin.version_protest.F3Change' as 'mixin.version_protest' is disabled in config
+[15:12:50] [Client thread/INFO] [ASMUtil]: Transforming class net/minecraft/client/renderer/RenderGlobal
+[15:12:50] [Client thread/INFO] [ASMUtil]: Transforming method net/minecraft/client/renderer/RenderGlobal.func_180446_a(Lnet/minecraft/entity/Entity;Lnet/minecraft/client/renderer/culling/ICamera;F)V
+[15:12:50] [Client thread/INFO] [ASMUtil]: Transforming class net/minecraft/client/renderer/RenderGlobal
+[15:12:50] [Client thread/INFO] [ASMUtil]: Transforming method net/minecraft/client/renderer/RenderGlobal.func_180446_a(Lnet/minecraft/entity/Entity;Lnet/minecraft/client/renderer/culling/ICamera;F)V
+[15:12:50] [Client thread/FATAL] [VintageFix]: OptiFine detected, there may be issues
+[15:12:50] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'mixin.version_protest.LoaderChange' as 'mixin.version_protest' is disabled in config
+[15:12:51] [Client thread/INFO] [xaero.lib.XaeroLib]: Registering common data for channel xaerolib:main!
+[15:12:51] [Client thread/INFO] [xaero.lib.XaeroLib]: Registering client data for channel xaerolib:main!
+[15:12:51] [Client thread/INFO] [xaero.lib.XaeroLib]: Loading primary common config for channel xaerolib:main!
+[15:12:51] [Client thread/INFO] [xaero.lib.XaeroLib]: Loading server config profiles for channel xaerolib:main!
+[15:12:51] [Client thread/INFO] [xaero.lib.XaeroLib]: Loading primary client config for channel xaerolib:main!
+[15:12:51] [Client thread/INFO] [xaero.lib.XaeroLib]: Loading client config profiles for channel xaerolib:main!
+[15:12:51] [Client thread/INFO] [stellar_core]: [StellarCore-ResourceExistingCache] Resource cache cleared.
+[15:12:51] [Client thread/INFO] [net.minecraft.client.resources.SimpleReloadableResourceManager]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:ConfigAnytime, FMLFileResourcePack:Red Core, FMLFileResourcePack:Alfheim, FMLFileResourcePack:LoliASM, FMLFileResourcePack:EntityCulling, FMLFileResourcePack:Fixeroo, FMLFileResourcePack:RenderLib, FMLFileResourcePack:Stellar Core, FMLFileResourcePack:Universal Tweaks, FMLFileResourcePack:VintageFix, FMLFileResourcePack:XaeroLib, FMLFileResourcePack:Xaero's Minimap
+[15:12:51] [Client thread/INFO] [FML]: Processing ObjectHolder annotations
+[15:12:51] [Client thread/INFO] [FML]: Found 1169 ObjectHolder annotations
+[15:12:51] [Client thread/INFO] [FML]: Identifying ItemStackHolder annotations
+[15:12:51] [Client thread/INFO] [FML]: Found 0 ItemStackHolder annotations
+[15:12:52] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class axw net.minecraft.world.chunk.Chunk
+[15:12:52] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class axw net.minecraft.world.chunk.Chunk
+[15:12:52] [Client thread/INFO] [FML]: Configured a dormant chunk cache size of 0
+[15:12:52] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Starting version check at http://files.minecraftforge.net/maven/net/minecraftforge/forge/promotions_slim.json
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: UTAttributes ::: Successfully altered attribute generic.maxHealth with -65536.0 as minimum and 65536.0 as maximum
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: UTAttributes ::: Successfully altered attribute generic.followRange with -65536.0 as minimum and 65536.0 as maximum
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: UTAttributes ::: Successfully altered attribute generic.knockbackResistance with -65536.0 as minimum and 65536.0 as maximum
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: UTAttributes ::: Successfully altered attribute generic.movementSpeed with -65536.0 as minimum and 65536.0 as maximum
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: UTAttributes ::: Successfully altered attribute generic.flyingSpeed with -65536.0 as minimum and 65536.0 as maximum
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: UTAttributes ::: Successfully altered attribute generic.attackDamage with -65536.0 as minimum and 65536.0 as maximum
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: UTAttributes ::: Successfully altered attribute generic.attackSpeed with -65536.0 as minimum and 65536.0 as maximum
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: UTAttributes ::: Successfully altered attribute generic.armor with -65536.0 as minimum and 65536.0 as maximum
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: UTAttributes ::: Successfully altered attribute generic.armorToughness with -65536.0 as minimum and 65536.0 as maximum
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: UTAttributes ::: Successfully altered attribute generic.luck with -65536.0 as minimum and 65536.0 as maximum
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: OptiFine detected, updating config file...
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: OptiFine auto save interval updated to 900
+[15:12:52] [Client thread/INFO] [Universal Tweaks]: Universal Tweaks pre-initialized
+[15:12:52] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'mixin.dynamic_resources.SafeModelBakeWrapperMixin' as 'mixin.dynamic_resources' is disabled in config
+[15:12:52] [Client thread/INFO] [STDOUT]: [xaero.lib.core.transformer.ClassNodeTransformer:transform:29]: Transforming class pl net.minecraft.server.management.PlayerList
+[15:12:52] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class pl net.minecraft.server.management.PlayerList
+[15:12:52] [Client thread/INFO] [STDOUT]: [xaero.lib.core.transformer.ClassNodeTransformer:transform:29]: Transforming class pl net.minecraft.server.management.PlayerList
+[15:12:52] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class pl net.minecraft.server.management.PlayerList
+[15:12:53] [Client thread/INFO] [xaero.common.HudMod]: Registering common data for channel xaerominimap:main!
+[15:12:53] [Client thread/INFO] [xaero.common.HudMod]: Registering client data for channel xaerominimap:main!
+[15:12:53] [Forge Version Check/INFO] [forge.VersionCheck]: [forge] Found status: AHEAD Target: null
+[15:12:53] [Forge Version Check/INFO] [forge.VersionCheck]: [redcore] Starting version check at https://forge.curseupdate.com/873867/redcore
+[15:12:53] [Forge Version Check/INFO] [forge.VersionCheck]: [alfheim] Starting version check at https://forge.curseupdate.com/910715/alfheim
+[15:12:54] [Client thread/INFO] [xaero.common.HudMod]: Loading primary common config for channel xaerominimap:main!
+[15:12:54] [Client thread/INFO] [xaero.common.HudMod]: Loading server config profiles for channel xaerominimap:main!
+[15:12:54] [Client thread/INFO] [xaero.common.HudMod]: Loading primary client config for channel xaerominimap:main!
+[15:12:54] [Client thread/INFO] [xaero.common.HudMod]: Loading client config profiles for channel xaerominimap:main!
+[15:12:54] [Client thread/INFO] [FML]: Applying holder lookups
+[15:12:54] [Client thread/INFO] [FML]: Holder lookups applied
+[15:12:54] [Client thread/INFO] [FML]: Applying holder lookups
+[15:12:54] [Client thread/INFO] [FML]: Holder lookups applied
+[15:12:54] [Client thread/INFO] [FML]: Applying holder lookups
+[15:12:54] [Client thread/INFO] [FML]: Holder lookups applied
+[15:12:54] [Client thread/INFO] [FML]: Applying holder lookups
+[15:12:54] [Client thread/INFO] [FML]: Holder lookups applied
+[15:12:54] [Client thread/INFO] [FML]: Injecting itemstacks
+[15:12:54] [Client thread/INFO] [FML]: Itemstack injection complete
+[15:12:54] [Client thread/INFO] [Config]: [OptiFine] *** Reloading textures ***
+[15:12:54] [Client thread/INFO] [Config]: [OptiFine] Resource packs: Default
+[15:12:54] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class bfc net.minecraft.world.storage.SaveFormatOld
+[15:12:55] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Starting up SoundSystem...
+[15:12:55] [Thread-9/INFO] [net.minecraft.client.audio.SoundManager]: Initializing LWJGL OpenAL
+[15:12:55] [Thread-9/INFO] [net.minecraft.client.audio.SoundManager]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[15:12:55] [Thread-9/INFO] [net.minecraft.client.audio.SoundManager]: OpenAL initialized.
+[15:12:55] [Sound Library Loader/INFO] [net.minecraft.client.audio.SoundManager]: Sound engine started
+[15:12:55] [StellarCore-BlockFaceUVsPool-CanonicalizeWorker/INFO] [stellar_core]: [StellarCore-BlockFaceUVsPool] CanonicalizeWorker started.
+[15:12:56] [Client thread/INFO] [stellar_core]: [StellarCore-ParallelModelLoader] Registered model loader: net.minecraftforge.client.model.b3d.B3DLoader, AsyncBlackListed: false
+[15:12:56] [Client thread/INFO] [stellar_core]: [StellarCore-ParallelModelLoader] Registered model loader: net.minecraftforge.client.model.obj.OBJLoader, AsyncBlackListed: false
+[15:12:56] [Client thread/INFO] [stellar_core]: [StellarCore-ParallelModelLoader] Registered model loader: net.minecraftforge.client.model.ModelFluid$FluidLoader, AsyncBlackListed: false
+[15:12:56] [Client thread/INFO] [stellar_core]: [StellarCore-ParallelModelLoader] Registered model loader: net.minecraftforge.client.model.ItemLayerModel$Loader, AsyncBlackListed: false
+[15:12:56] [Client thread/INFO] [stellar_core]: [StellarCore-ParallelModelLoader] Registered model loader: net.minecraftforge.client.model.MultiLayerModel$Loader, AsyncBlackListed: false
+[15:12:56] [Client thread/INFO] [stellar_core]: [StellarCore-ParallelModelLoader] Registered model loader: net.minecraftforge.client.model.ModelDynBucket$LoaderDynBucket, AsyncBlackListed: false
+[15:12:56] [Client thread/INFO] [stellar_core]: [StellarCore-ResourceExistingCache] Resource cache enabled.
+[15:12:59] [Client thread/INFO] [stellar_core]: [StellarCore-ParallelModelLoader] Loaded 254 block models, took 2755ms.
+[15:13:00] [Client thread/INFO] [stellar_core]: [StellarCore-ParallelModelLoader] Loaded 411 items models, took 1091ms.
+[15:13:00] [Client thread/WARN] [VintageFix Mixin Loader]: Not applying mixin 'mixin.dynamic_resources.TextureCollectionMixin' as 'mixin.dynamic_resources' is disabled in config
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] Multitexture: false
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_pane_white.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/0_glass_white/glass_white.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_pane_purple.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/10_glass_purple/glass_purple.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_blue.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/11_glass_blue/glass_pane_blue.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_brown.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/12_glass_brown/glass_pane_brown.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_green.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/13_glass_green/glass_pane_green.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_pane_red.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/14_glass_red/glass_red.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_black.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/15_glass_black/glass_pane_black.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_orange.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/1_glass_orange/glass_pane_orange.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_magenta.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/2_glass_magenta/glass_pane_magenta.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_light_blue.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/3_glass_light_blue/glass_pane_light_blue.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_pane_yellow.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/4_glass_yellow/glass_yellow.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_lime.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/5_glass_lime/glass_pane_lime.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pane_pink.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/6_glass_pink/glass_pink.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/7_glass_gray/glass_gray.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/7_glass_gray/glass_pane_gray.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_pane_silver.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/8_glass_silver/glass_silver.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_cyan.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/9_glass_cyan/glass_pane_cyan.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/bookshelf.properties
+[15:13:00] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/glass.properties
+[15:13:01] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/glasspane.properties
+[15:13:01] [Client thread/INFO] [Config]: [OptiFine] ConnectedTextures: mcpatcher/ctm/default/sandstone.properties
+[15:13:01] [Client thread/INFO] [Config]: [OptiFine] Multipass connected textures: false
+[15:13:01] [Client thread/INFO] [Config]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
+[15:13:03] [Client thread/INFO] [Config]: [OptiFine] Custom loader sprites: 3
+[15:13:03] [Client thread/INFO] [Config]: [OptiFine] Sprite dependencies: 6
+[15:13:04] [Client thread/INFO] [net.minecraft.client.renderer.texture.TextureMap]: Created: 1024x512 textures-atlas
+[15:13:04] [Client thread/INFO] [Config]: [OptiFine] Animated sprites: 22
+[15:13:06] [Client thread/INFO] [stellar_core]: [StellarCore-ParallelModelLoader] Baked 2722 models, took 1680ms.
+[15:13:06] [Client thread/INFO] [LoliASM]: Clearing and Trimming multipartModels, original size: 31 entries
+[15:13:06] [Client thread/INFO] [LoliASM]: Clearing and Trimming multipartDefinitions, original size: 649 entries
+[15:13:06] [Client thread/INFO] [LoliASM]: Clearing and Trimming multipartVariantMap, original size: 0 entries
+[15:13:06] [Client thread/INFO] [LoliASM]: Clearing and Trimming blockDefinitions, original size: 407 entries
+[15:13:06] [Client thread/INFO] [stellar_core]: [StellarCore-ParallelModelLoader] Removed 0 (Before: 4226) model cache, took 12ms.
+[15:13:06] [Client thread/INFO] [stellar_core]: [StellarCore-ResourceExistingCache] Resource cache disabled.
+[15:13:06] [Client thread/INFO] [LoliASM]: Evicted 1600 sprites' frame texture data
+[15:13:06] [Client thread/INFO] [Fixeroo]: Transforming net.minecraft.client.renderer.entity.RenderPlayer
+[15:13:07] [Client thread/INFO] [Fixeroo]: Transforming net.minecraft.client.model.ModelPlayer
+[15:13:07] [Client thread/INFO] [FML]: Applying holder lookups
+[15:13:07] [Client thread/INFO] [FML]: Holder lookups applied
+[15:13:07] [Client thread/INFO] [Universal Tweaks]: Block Overlay lists initialized
+[15:13:08] [Client thread/INFO] [Universal Tweaks]: Universal Tweaks client initialized
+[15:13:08] [Client thread/INFO] [Universal Tweaks]: Universal Tweaks initialized
+[15:13:08] [Client thread/INFO] [xaero.lib.XaeroLib]: Loading XaeroLib common 1/2!
+[15:13:08] [Client thread/INFO] [xaero.lib.XaeroLib]: Loading XaeroLib client 1/2!
+[15:13:09] [Client thread/WARN] [xaero.lib.XaeroLib]: io exception while checking patreon: Online mod data expired! Date: Thu Sep 24 07:30:19 WEST 2026
+[15:13:09] [Client thread/INFO] [xaero.minimap.XaeroMinimap]: Loading Xaero's Minimap - Stage 1/2
+[15:13:10] [Client thread/INFO] [FML]: Injecting itemstacks
+[15:13:10] [Client thread/INFO] [FML]: Itemstack injection complete
+[15:13:10] [Client thread/INFO] [Universal Tweaks]: Entity Desync blacklist initialized
+[15:13:10] [Client thread/INFO] [Universal Tweaks]: Block Dispenser block list initialized
+[15:13:10] [Client thread/INFO] [Universal Tweaks]: Swing Through Grass lists initialized
+[15:13:10] [Client thread/INFO] [Universal Tweaks]: Incurable Potions list initialized
+[15:13:10] [Client thread/INFO] [Universal Tweaks]: Item rarity map initialized
+[15:13:10] [Client thread/INFO] [Universal Tweaks]: Universal Tweaks post-initialized
+[15:13:10] [Client thread/INFO] [STDOUT]: [xaero.lib.core.transformer.ClassNodeTransformer:transform:29]: Transforming class brz net.minecraft.client.network.NetHandlerPlayClient
+[15:13:10] [Client thread/INFO] [STDOUT]: [xaero.common.core.transformer.ClassNodeTransformer:transform:29]: Transforming class brz net.minecraft.client.network.NetHandlerPlayClient
+[15:13:10] [Client thread/INFO] [Universal Tweaks]: Universal Tweaks client post-initialized
+[15:13:10] [Client thread/INFO] [xaero.lib.XaeroLib]: Loading XaeroLib common 2/2!
+[15:13:10] [Client thread/INFO] [xaero.lib.XaeroLib]: Loading XaeroLib client 2/2!
+[15:13:10] [Client thread/INFO] [xaero.minimap.XaeroMinimap]: Loading Xaero's Minimap - Stage 2/2
+[15:13:12] [Client thread/WARN] [xaero.hud.minimap.MinimapLogs]: io exception while checking versions: Online mod data expired! Date: Thu Sep 24 07:30:19 WEST 2026
+[15:13:12] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Registered player tracker system: minimap_synced
+[15:13:12] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Optifine!
+[15:13:12] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Xaero's Minimap: No Vivecraft!
+[15:13:12] [Client thread/INFO] [LoliASM]: Trimming simple registries
+[15:13:12] [Client thread/INFO] [LoliASM]: Cleaning up LaunchClassLoader
+[15:13:12] [Client thread/INFO] [LoliASM]: 1095173 total strings processed. 78335 unique strings in LoliStringPool, 1016838 strings deduplicated altogether during game load.
+[15:13:12] [Client thread/INFO] [LoliASM]: Took 39.52 ms to canonicalize Java's FilePermission caches.
+[15:13:12] [StellarCore-UnpackedDataPool-L1-CanonicalizeWorker/INFO] [stellar_core]: [StellarCore-UnpackedDataPool-L1] CanonicalizeWorker started.
+[15:13:12] [StellarCore-UnpackedDataPool-L2-CanonicalizeWorker/INFO] [stellar_core]: [StellarCore-UnpackedDataPool-L2] CanonicalizeWorker started.
+[15:13:12] [StellarCore-UnpackedDataPool-L3-CanonicalizeWorker/INFO] [stellar_core]: [StellarCore-UnpackedDataPool-L3] CanonicalizeWorker started.
+[15:13:12] [StellarCore-VertexDataPool-CanonicalizeWorker/INFO] [stellar_core]: [StellarCore-VertexDataPool] CanonicalizeWorker started.
+[15:13:12] [Client thread/INFO] [stellar_core]: [StellarCore-UnpackedDataPool] Pool reset in 2ms.
+[15:13:12] [StellarCore-UnpackedDataPool-L2-CanonicalizeWorker/INFO] [stellar_core]: [StellarCore-UnpackedDataPool-L2] CanonicalizeWorker stopped.
+[15:13:12] [StellarCore-UnpackedDataPool-L3-CanonicalizeWorker/INFO] [stellar_core]: [StellarCore-UnpackedDataPool-L3] CanonicalizeWorker stopped.
+[15:13:12] [StellarCore-BakedQuadPool-CanonicalizeWorker/INFO] [stellar_core]: [StellarCore-BakedQuadPool] CanonicalizeWorker started.
+[15:13:12] [ForkJoinPool.commonPool-worker-0/INFO] [stellar_core]: [StellarCore-BakedQuadPool] 0 BakedQuad processed. 0 Unique, 0 Deduplicated.
+[15:13:12] [ForkJoinPool.commonPool-worker-0/INFO] [stellar_core]: [StellarCore-BakedQuadPool] Pool cleared.
+[15:13:12] [ForkJoinPool.commonPool-worker-2/INFO] [stellar_core]: [StellarCore-BlockFaceUVsPool] 13692 UVs processed. 646 Unique, 13046 Deduplicated.
+[15:13:12] [ForkJoinPool.commonPool-worker-2/INFO] [stellar_core]: [StellarCore-BlockFaceUVsPool] Pool cleared.
+[15:13:12] [Client thread/INFO] [Universal Tweaks]: The game loaded in approximately 53.102 seconds
+[15:13:12] [Client thread/INFO] [FML]: Forge Mod Loader has successfully loaded 20 mods
+[15:13:12] [Client thread/WARN] [net.minecraft.client.settings.GameSettings]: Skipping bad option: lastServer:
+[15:13:12] [Client thread/INFO] [renderlib]: OpenGL Debug: supported=OpenGL43, enabled=true
+[15:13:12] [Finalizer/WARN] [LoliASM]: Clearing LoliStringPool 1
+[15:13:13] [Client thread/INFO] [com.mojang.text2speech.NarratorLinux]: Narrator library successfully loaded
+[15:13:13] [Client thread/INFO] [VintageFix]: Game launch took 59.502 seconds
+[15:13:13] [Client thread/INFO] [net.optifine.Log]: [OptiFine] (Reflector) Class not present: mods.betterfoliage.client.BetterFoliageClient
+[15:13:13] [Client thread/INFO] [Config]: [OptiFine] *** Reloading custom textures ***
+[15:30:44] [Netty Client IO #0/INFO] [FML]: Attempting connection with missing mods [naughthirium, entityculling, renderlib, universaltweaks] at SERVER
+[15:30:48] [Client thread/INFO] [net.minecraft.client.multiplayer.GuiConnecting]: Connecting to sablinasemporium.ddns.net, 14001
+[15:30:50] [Netty Epoll Client IO #0/INFO] [FML]: Server protocol version 2
+[15:30:50] [Netty Epoll Client IO #0/INFO] [FML]: Attempting connection with missing mods [naughthirium, entityculling, renderlib, universaltweaks] at SERVER
+[15:30:51] [Client thread/INFO] [FML]: Injecting existing registry data into this client instance
+[15:30:51] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_button
+[15:30:51] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_super_button
+[15:30:51] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_arrow
+[15:30:51] [Client thread/ERROR] [FML]: Unidentified mapping from registry minecraft:recipes
+[15:30:51] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_super_button: 444
+[15:30:51] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_arrow: 445
+[15:30:51] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_button: 443
+[15:30:51] [Client thread/INFO] [FML]: Applying holder lookups
+[15:30:51] [Client thread/INFO] [FML]: Holder lookups applied
+[15:30:51] [Netty Epoll Client IO #0/INFO] [FML]: [Netty Epoll Client IO #0] Client side modded connection established
+[15:30:52] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Minimap required item set to nothing.
+[15:30:52] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: New Xaero hud session initialized!
+[15:30:52] [Client thread/INFO] [LoliASM]: Took 32.59 ms to canonicalize Java's FilePermission caches.
+[15:30:52] [Client thread/INFO] [net.minecraft.client.renderer.chunk.ChunkRenderDispatcher]: Creating 2 chunk builders
+[15:30:53] [Finalizer/WARN] [LoliASM]: Clearing LoliStringPool 1
+[15:30:53] [Client thread/WARN] [Config]: [OptiFine] java.lang.NullPointerException null
+[15:30:53] [Client thread/WARN] [Config]: [OptiFine] Error finding Chunk.hasEntities
+[15:30:53] [Client thread/INFO] [net.optifine.Log]: [OptiFine] (Reflector) Field not present: net.minecraft.world.chunk.Chunk.hasEntities
+[15:30:53] [Chunk Batcher 0/WARN] [CleanMix]: Method overwrite conflict for func_178604_a in mixins.vintagefix.json:allocation_rate.MixinVisGraph from mod vintagefix, previously written by zone.rong.loliasm.client.rendering.mixins.VisGraphMixin. Skipping method.
+[15:30:54] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Reloading radar icon resources...
+[15:30:54] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Reloaded radar icon resources!
+[15:30:55] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Minimap updated server level id: 932523919 for world 0
+[15:30:55] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 283 advancements
+[15:44:42] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Xaero hud session finalized.
+[15:44:42] [Client thread/INFO] [LoliASM]: Released 1 skin textures
+[15:44:42] [Client thread/INFO] [FML]: Applying holder lookups
+[15:44:42] [Client thread/INFO] [FML]: Holder lookups applied
+[15:45:41] [Client thread/INFO] [net.minecraft.client.multiplayer.GuiConnecting]: Connecting to sablinasemporium.ddns.net, 14001
+[15:45:43] [Netty Epoll Client IO #1/INFO] [FML]: Server protocol version 2
+[15:45:43] [Netty Epoll Client IO #1/INFO] [FML]: Attempting connection with missing mods [naughthirium, entityculling, renderlib, universaltweaks] at SERVER
+[15:45:44] [Client thread/INFO] [FML]: Injecting existing registry data into this client instance
+[15:45:44] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_button
+[15:45:44] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_super_button
+[15:45:44] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_arrow
+[15:45:44] [Client thread/ERROR] [FML]: Unidentified mapping from registry minecraft:recipes
+[15:45:44] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_button: 443
+[15:45:44] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_super_button: 444
+[15:45:44] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_arrow: 445
+[15:45:44] [Client thread/INFO] [FML]: Applying holder lookups
+[15:45:44] [Client thread/INFO] [FML]: Holder lookups applied
+[15:45:44] [Netty Epoll Client IO #1/INFO] [FML]: [Netty Epoll Client IO #1] Client side modded connection established
+[15:45:44] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Minimap required item set to nothing.
+[15:45:44] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: New Xaero hud session initialized!
+[15:45:44] [Client thread/INFO] [LoliASM]: Took 30.75 ms to canonicalize Java's FilePermission caches.
+[15:45:44] [Client thread/INFO] [net.minecraft.client.renderer.chunk.ChunkRenderDispatcher]: Creating 2 chunk builders
+[15:45:45] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Minimap updated server level id: 932523919 for world 0
+[15:45:45] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 283 advancements
+[15:45:46] [Finalizer/WARN] [LoliASM]: Clearing LoliStringPool 1
+[15:45:54] [Client thread/INFO] [net.minecraft.client.multiplayer.ChunkProviderClient]: Warning: Clientside chunk ticking took 150 ms
+[15:49:24] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Xaero hud session finalized.
+[15:49:24] [Client thread/INFO] [LoliASM]: Released 1 skin textures
+[15:49:24] [Client thread/INFO] [FML]: Applying holder lookups
+[15:49:24] [Client thread/INFO] [FML]: Holder lookups applied
+[15:50:24] [Client thread/INFO] [net.minecraft.client.multiplayer.GuiConnecting]: Connecting to sablinasemporium.ddns.net, 14001
+[15:50:29] [Client thread/INFO] [net.minecraft.client.multiplayer.GuiConnecting]: Connecting to sablinasemporium.ddns.net, 14001
+[15:50:31] [Netty Epoll Client IO #3/INFO] [FML]: Server protocol version 2
+[15:50:31] [Netty Epoll Client IO #3/INFO] [FML]: Attempting connection with missing mods [naughthirium, entityculling, renderlib, universaltweaks] at SERVER
+[15:50:31] [Client thread/INFO] [FML]: Injecting existing registry data into this client instance
+[15:50:31] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_button
+[15:50:31] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_super_button
+[15:50:31] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_arrow
+[15:50:31] [Client thread/ERROR] [FML]: Unidentified mapping from registry minecraft:recipes
+[15:50:31] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_arrow: 445
+[15:50:31] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_button: 443
+[15:50:31] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_super_button: 444
+[15:50:31] [Client thread/INFO] [FML]: Applying holder lookups
+[15:50:31] [Client thread/INFO] [FML]: Holder lookups applied
+[15:50:32] [Netty Epoll Client IO #3/INFO] [FML]: [Netty Epoll Client IO #3] Client side modded connection established
+[15:50:32] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Minimap required item set to nothing.
+[15:50:32] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: New Xaero hud session initialized!
+[15:50:32] [Client thread/INFO] [LoliASM]: Took 11.81 ms to canonicalize Java's FilePermission caches.
+[15:50:32] [Client thread/INFO] [net.minecraft.client.renderer.chunk.ChunkRenderDispatcher]: Creating 2 chunk builders
+[15:50:32] [Finalizer/WARN] [LoliASM]: Clearing LoliStringPool 1
+[15:50:32] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Minimap updated server level id: 932523919 for world 0
+[15:50:33] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 283 advancements
+[15:59:38] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Xaero hud session finalized.
+[15:59:38] [Client thread/INFO] [LoliASM]: Released 1 skin textures
+[15:59:38] [Client thread/INFO] [FML]: Applying holder lookups
+[15:59:38] [Client thread/INFO] [FML]: Holder lookups applied
+[16:00:40] [Client thread/INFO] [net.minecraft.client.multiplayer.GuiConnecting]: Connecting to sablinasemporium.ddns.net, 14001
+[16:00:42] [Netty Epoll Client IO #4/INFO] [FML]: Server protocol version 2
+[16:00:42] [Netty Epoll Client IO #4/INFO] [FML]: Attempting connection with missing mods [naughthirium, entityculling, renderlib, universaltweaks] at SERVER
+[16:00:42] [Client thread/INFO] [FML]: Injecting existing registry data into this client instance
+[16:00:42] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_button
+[16:00:42] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_super_button
+[16:00:42] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_arrow
+[16:00:42] [Client thread/ERROR] [FML]: Unidentified mapping from registry minecraft:recipes
+[16:00:42] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_super_button: 444
+[16:00:42] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_button: 443
+[16:00:42] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_arrow: 445
+[16:00:42] [Client thread/INFO] [FML]: Applying holder lookups
+[16:00:42] [Client thread/INFO] [FML]: Holder lookups applied
+[16:00:43] [Netty Epoll Client IO #4/INFO] [FML]: [Netty Epoll Client IO #4] Client side modded connection established
+[16:00:43] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Minimap required item set to nothing.
+[16:00:43] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: New Xaero hud session initialized!
+[16:00:43] [Client thread/INFO] [LoliASM]: Took 17.80 ms to canonicalize Java's FilePermission caches.
+[16:00:43] [Client thread/INFO] [net.minecraft.client.renderer.chunk.ChunkRenderDispatcher]: Creating 2 chunk builders
+[16:00:43] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Minimap updated server level id: 932523919 for world 0
+[16:00:43] [Finalizer/WARN] [LoliASM]: Clearing LoliStringPool 1
+[16:00:43] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 283 advancements
+[16:04:57] [Client thread/WARN] [net.minecraft.profiler.Profiler]: Something's taking too long! 'root.render' took aprox 129.295515 ms
+[16:04:57] [Client thread/WARN] [net.minecraft.profiler.Profiler]: Something's taking too long! 'root' took aprox 176.738374 ms
+[16:05:01] [Client thread/WARN] [net.minecraft.profiler.Profiler]: Something's taking too long! 'root' took aprox 107.675957 ms
+[16:18:34] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Xaero hud session finalized.
+[16:18:34] [Client thread/INFO] [LoliASM]: Released 1 skin textures
+[16:18:34] [Client thread/INFO] [FML]: Applying holder lookups
+[16:18:34] [Client thread/INFO] [FML]: Holder lookups applied
+[16:19:41] [Client thread/INFO] [net.minecraft.client.multiplayer.GuiConnecting]: Connecting to sablinasemporium.ddns.net, 14001
+[16:19:44] [Netty Epoll Client IO #5/INFO] [FML]: Server protocol version 2
+[16:19:44] [Netty Epoll Client IO #5/INFO] [FML]: Attempting connection with missing mods [naughthirium, entityculling, renderlib, universaltweaks] at SERVER
+[16:19:44] [Client thread/INFO] [FML]: Injecting existing registry data into this client instance
+[16:19:44] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_button
+[16:19:44] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_super_button
+[16:19:44] [Client thread/INFO] [FML]: Registry IRecipe: Found a missing id from the world asem:recipes/craft_explosive_arrow
+[16:19:44] [Client thread/ERROR] [FML]: Unidentified mapping from registry minecraft:recipes
+[16:19:44] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_arrow: 445
+[16:19:44] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_button: 443
+[16:19:44] [Client thread/ERROR] [FML]:     asem:recipes/craft_explosive_super_button: 444
+[16:19:44] [Client thread/INFO] [FML]: Applying holder lookups
+[16:19:44] [Client thread/INFO] [FML]: Holder lookups applied
+[16:19:44] [Netty Epoll Client IO #5/INFO] [FML]: [Netty Epoll Client IO #5] Client side modded connection established
+[16:19:44] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Minimap required item set to nothing.
+[16:19:44] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: New Xaero hud session initialized!
+[16:19:44] [Client thread/INFO] [LoliASM]: Took 18.37 ms to canonicalize Java's FilePermission caches.
+[16:19:44] [Client thread/INFO] [net.minecraft.client.renderer.chunk.ChunkRenderDispatcher]: Creating 2 chunk builders
+[16:19:45] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Minimap updated server level id: 932523919 for world 0
+[16:19:46] [Client thread/INFO] [net.minecraft.advancements.AdvancementList]: Loaded 283 advancements
+[16:19:46] [Finalizer/WARN] [LoliASM]: Clearing LoliStringPool 1
+[16:28:21] [Client thread/INFO] [xaero.hud.minimap.MinimapLogs]: Xaero hud session finalized.
+[16:28:21] [Client thread/INFO] [LoliASM]: Released 1 skin textures
+[16:28:21] [Client thread/INFO] [FML]: Applying holder lookups
+[16:28:21] [Client thread/INFO] [FML]: Holder lookups applied
+[16:28:21] [Netty Client IO #1/INFO] [FML]: Attempting connection with missing mods [naughthirium, entityculling, renderlib, universaltweaks] at SERVER
+[16:28:23] [Client thread/INFO] [net.minecraft.client.Minecraft]: Stopping!
+[16:28:23] [Client thread/INFO] [net.minecraft.client.audio.SoundManager]: SoundSystem shutting down...
+[16:28:23] [Client thread/WARN] [net.minecraft.client.audio.SoundManager]: Author: Paul Lamb, www.paulscode.com
