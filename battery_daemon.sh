@@ -229,28 +229,21 @@ main_loop_func(){
 
 	sleep 5.0
 
-	clear_screen 1
-	
 	while true;
 	do
-	
-	
-		
+		clear_screen 1
+
 		echo_current_battery_status
-		
 		echo "The current time is: $curr_time"
-		
 		compute_curr_time
 		local are_we_joever=$(check_the_time)
 		local are_we_close=$(we_have_close_to_no_time)
 		echo "Are we over? ${are_we_joever}"
 		echo "Are we close? ${are_we_joever}"
-		
 		if [ $are_we_close -eq 1 ]
 		then
 			echo "We have less than ${percentage_of_time_left_for_warning_to_trigger_graphical_val}% of the total time left!"
 		fi
-		
 		if [ $are_we_joever -eq 1 ]
 		then
 			echo "We ran out of time We are shutting down. Sorry, man"
@@ -265,15 +258,9 @@ main_loop_func(){
 				poweroff
 			fi
 		else
-			clear_screen 0
 			sleep $(compute_seconds_to_wait)
 		fi
-		
-		
-		
 	done
-	
-	
 }
 
 main_loop_func
