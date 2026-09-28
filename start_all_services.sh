@@ -31,34 +31,42 @@ fi
 #first arg is session name
 #second member is sleep time before next session
 #third member is sleep time before next window cmd in session
+#fourth member is whether or not we should write
+#this session
+#to the session names file
 
 
 							
 session_name_http_server_array=("http_server"
 						"0.5"
 						"0.5"
+						"1"
 			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/http_server_final/server ; bash server_start.sh")
 
 #give it time to start
 session_name_mysql_array=("mysql"
 						"20.5"
 						"0.5"
+						"1"
 			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/mysqlstuffpriv/amxmodxserver_mgmt/scripts ; bash start*daemon*sh")
 			
 session_name_lutris_array=("lutris"
 						"0.5"
 						"0.5"
+						"1"
 						"lutris -d")
 									
 session_name_agario_array=("agario"
 							"0.5"
 							"0.5"
-			"pushd /mnt/FASTstorage/Agariobackup/MultiOgarII/src ; node ./index.js"
-			"pushd /mnt/FASTstorage/Agariobackup/MultiOgarII/src")
+							"1"
+			"pushd /mnt/FASTstorage/Agariobackup/Gota-Private-Server-Abandoned-/src ; node ./index.js"
+			"pushd /mnt/FASTstorage/Agariobackup/Gota-Private-Server-Abandoned-/src")
 			
 session_name_trackmania_array=("trackmania"
 						"0.5"
 						"0.5"
+						"1"
 			"pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/TmUnitedForeverServer ; bash Run*sh"
 			"pushd /mnt/REBORN/TMF_SERVER_TMP/TMF/xaseco ; bash ./AsecoF.sh")
 			
@@ -66,12 +74,14 @@ session_name_trackmania_array=("trackmania"
 session_name_emotionstreamer_array=("emotionstreamer_stuff"
 						"0.5"
 						"0.5"
+						"1"
 			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/code; ${term_exec_string} ./startup.sh"
 			"pushd /mnt/SUPER_CAVALEIRO/progsBackup/emotionstreamer/code")
 			
 session_name_half_life_array=("half_life"
 								"0.5"
 								"3.5"
+								"1"
 								"pushd /mnt/REBORN/half_life_stuff/Half-Life ; bash launch*game*sh"
 								"pushd /mnt/REBORN/half_life_stuff/Half-Life"
 								"pushd /mnt/REBORN/half_life_stuff/Half-Life"
@@ -84,14 +94,31 @@ session_name_half_life_array=("half_life"
 session_name_minecraft_server=("minecraft_server"
 						"0.5"
 						"0.5"
+						"1"
 			"pushd $HOME/minecraft_servers_fast_storage/forge_1-12-2; bash server_launcher.sh")
 
 session_name_remote_shell=("remote_shell"
 						"0.5"
 						"0.5"
-			"pushd /home/addysmagic/all_programming_backups/FASTERprogs/remoteshell/admin ; ./admin.exe 0.0.0.0 13000 bash 1 50 50")
+						"1"
+			"pushd /home/addysmagic/all_programming_backups/FASTERprogs/remoteshell/admin ; ./admin.exe 0.0.0.0 13000 bash 1 80 50")
+
+session_name_ppsspp_relay_server=("ppsspp_relay_server"
+						"0.5"
+						"0.5"
+						"1"
+			"pushd /mnt/SUPER_CAVALEIRO/PPSSPP_SERVER/aemu_postoffice/server_cpp"
+			"pushd /mnt/SUPER_CAVALEIRO/PPSSPP_SERVER/aemu_postoffice/server_cpp ; ./aemu_postoffice")
+
+session_name_battery_daemon=("battery_daemon"
+						"0.5"
+						"0.5"
+						"0"
+			"pushd /home/addysmagic/Desktop/workbench/battery_daemon_location"
+			"pushd /home/addysmagic/Desktop/workbench/battery_daemon_location ; bash ./battery_daemon.sh")
 
 array_of_all_tmux_sessions=(
+					session_name_battery_daemon
 					session_name_http_server_array
 					session_name_remote_shell
 					session_name_emotionstreamer_array
@@ -99,7 +126,8 @@ array_of_all_tmux_sessions=(
 					session_name_lutris_array
 					session_name_agario_array
 					session_name_trackmania_array
-					session_name_half_life_array)
+					session_name_half_life_array
+					session_name_ppsspp_relay_server)
 
 
 print_cmd_arr(){
@@ -122,7 +150,7 @@ start_another_session_func_inner(){
 }
 start_session_tabs_func(){
 	local arr=("$@")
-	local slot_where_windows_start=3
+	local slot_where_windows_start=4
 	echo "here: |${#arr[@]}|"
 	echo ${arr[@]}
 	echo $slot_where_windows_start
@@ -151,7 +179,12 @@ start_all(){
 	for group in "${array_of_all_tmux_sessions[@]}"; do
 		declare -n lst=$group
 		echo "Sessao de nome $group tem ${#lst[@]} elementos"
-		echo "${lst[0]}" >> "${tmp_session_names_file}"
+		if [ ${lst[3]} -gt 0 ]
+		then
+			echo "${lst[0]}" >> "${tmp_session_names_file}"
+			echo "writing session name \"${lst[0]}\""
+			echo "Into session names file!"
+		fi
 		${term_exec_string}  'start_another_session_func_inner "$@"' "placeholder" "${lst[@]}"&
 		sleep $(echo "${lst[1]}" | bc)
 	done
