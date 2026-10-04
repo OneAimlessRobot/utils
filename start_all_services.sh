@@ -115,7 +115,7 @@ session_name_ups_timer_daemon=("ups_timer"
 						"0.5"
 						"0"
 			"pushd /home/addysmagic/Desktop/workbench/ups_timer_folder"
-			"pushd /home/addysmagic/Desktop/workbench/ups_timer_folder ; bash ./ups_timer_folder.sh")
+			"pushd /home/addysmagic/Desktop/workbench/ups_timer_folder ; bash ./ups_timer.sh")
 
 array_of_all_tmux_sessions=(
 					session_name_ups_timer
