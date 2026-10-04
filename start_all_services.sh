@@ -118,7 +118,7 @@ session_name_ups_timer_daemon=("ups_timer"
 			"pushd /home/addysmagic/Desktop/workbench/ups_timer_folder ; bash ./ups_timer.sh")
 
 array_of_all_tmux_sessions=(
-					session_name_ups_timer
+					session_name_ups_timer_daemon
 					session_name_http_server_array
 					session_name_remote_shell
 					session_name_emotionstreamer_array
