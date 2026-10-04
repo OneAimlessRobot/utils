@@ -110,15 +110,15 @@ session_name_ppsspp_relay_server=("ppsspp_relay_server"
 			"pushd /mnt/SUPER_CAVALEIRO/PPSSPP_SERVER/aemu_postoffice/server_cpp"
 			"pushd /mnt/SUPER_CAVALEIRO/PPSSPP_SERVER/aemu_postoffice/server_cpp ; ./aemu_postoffice")
 
-session_name_battery_daemon=("battery_daemon"
+session_name_ups_timer_daemon=("ups_timer"
 						"0.5"
 						"0.5"
 						"0"
-			"pushd /home/addysmagic/Desktop/workbench/battery_daemon_location"
-			"pushd /home/addysmagic/Desktop/workbench/battery_daemon_location ; bash ./battery_daemon.sh")
+			"pushd /home/addysmagic/Desktop/workbench/ups_timer_folder"
+			"pushd /home/addysmagic/Desktop/workbench/ups_timer_folder ; bash ./ups_timer_folder.sh")
 
 array_of_all_tmux_sessions=(
-					session_name_battery_daemon
+					session_name_ups_timer
 					session_name_http_server_array
 					session_name_remote_shell
 					session_name_emotionstreamer_array

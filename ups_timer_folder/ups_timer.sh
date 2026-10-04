@@ -1,23 +1,15 @@
 #!/bin/bash
 
 #all non-derived constants
+#ups name
 
 
-#should we just log off or fully power off?
-#(We call the former testing mode and the latter non-testing mode)
+ups_name="sablina"
 
 kill_script_location="/mnt/FASTstorage/FASTprogs/utils/"
 
 
-#the battery to check
-the_battery_to_check="BAT0"
-
-
-#extract info from these files and act accordingly
-battery_capacity_file="capacity"
-battery_status_file="status"
-battery_voltage_now_file="voltage_now"
-
+ups_config_file_location="/etc/nut/ups.conf"
 
 window_manager_name="dwm"
 
@@ -25,16 +17,29 @@ kill_script_file_name="kill_started_procs.sh"
 
 percentage_of_time_left_for_warning_to_trigger=0.25
 
+#should we just log off or fully power off?
+#(We call the former testing mode and the latter non-testing mode)
+testing_mode=0
+
 tick_length=1.0
 
-testing_mode=0
 
 secs_in_one_min=60.0
 
 total_minutes_to_wait=3.0
 
 
-#kill_script_location
+
+status_cmd="upsc ${ups_name}"
+
+ups_driver_shutdown_cmd="sudo systemctl stop nut-driver@${ups_name}"
+ups_server_shutdown_cmd="sudo systemctl stop nut-server"
+
+ups_driver_init_cmd="sudo systemctl start nut-driver@${ups_name}"
+ups_server_init_cmd="sudo systemctl start nut-server"
+
+
+
 
 kill_script_full_file_path="${kill_script_location}${kill_script_file_name}"
 
@@ -43,6 +48,33 @@ kill_script_full_file_path="${kill_script_location}${kill_script_file_name}"
 kill_session_command="killall ${window_manager_name}"
 
 #helper_funcs
+
+files_to_cat=($ups_config_file_location)
+				
+				
+n_files_to_cat=${#files_to_cat[@]}
+
+echo "${n_files_to_cat}"
+
+echo_all_files(){
+	
+	for((i=0; i< $n_files_to_cat ;i++));
+	do
+		echo "this is file at the path of:"
+		echo ""
+		echo "${files_to_cat[$i]}"
+		echo ""
+		
+		while IFS= read -r file_line
+		do
+			echo "${file_line}"
+		
+		done < <(sudo tail -n 18 ${files_to_cat[$i]})
+		
+		
+	done
+
+}
 
 clear_screen(){
 	
@@ -113,75 +145,12 @@ inc_time(){
 
 the_total_seconds_to_wait=$(minutes_to_seconds 5)
 
-battery_files_directory="/sys/class/power_supply/${the_battery_to_check}/"
-
-echo_contextualized_contents_of_file(){
-	
-	local file_path=${1};
-	
-	echo "currently reading from file with full_path: ${file_path}"
-	echo ""
-	local current_count=0
-	while IFS= read -r line_from_file
-	do
-		current_count=$(($current_count + 1 ))
-		echo "Line number ${current_count}: ${line_from_file}"
-	
-	done < <(cat $file_path)
-	
-	echo ""
-	echo "We read: ${current_count} lines!"
-	echo ""
-	
-	
-}
-
-echo_current_contextualized_battery_status(){
-	
-	echo_contextualized_contents_of_file "${battery_files_directory}${battery_capacity_file}"
-	echo_contextualized_contents_of_file "${battery_files_directory}${battery_status_file}"
-	echo_contextualized_contents_of_file "${battery_files_directory}${battery_voltage_now_file}"
-	
-	
-}
-
-echo_contents_of_file(){
-	
-	local file_path=${1};
-	
-	while IFS= read -r line_from_file
-	do
-		echo "${line_from_file}"
-	
-	done < <(cat $file_path)
-}
-
-get_percentage(){
-	
-	echo_contents_of_file "${battery_files_directory}${battery_capacity_file}"
-	
-}
 
 get_status(){
 	
-	echo_contents_of_file "${battery_files_directory}${battery_status_file}"
+	$status_cmd | awk -F': O' '/ups.status:/ { print $2}'
 	
 }
-
-get_voltage(){
-	
-	echo_contents_of_file "${battery_files_directory}${battery_voltage_now_file}"
-	
-}
-
-echo_current_battery_status(){
-	
-	get_percentage
-	get_status
-	get_voltage
-}
-
-echo_current_contextualized_battery_status
 
 
 check_the_time(){
@@ -200,7 +169,7 @@ we_have_close_to_no_time(){
 compute_curr_time(){
 
 	local the_status=$(get_status)
-	if [ "$the_status" = "Discharging" ];
+	if [ "$the_status" = "B" ];
 	then
 		
 		dec_time
@@ -219,27 +188,41 @@ compute_curr_time(){
 
 main_loop_func(){
 	clear_screen 1
-	
-	printf "Welcome to the battery daemon!\nA warning text will be displayed\n"
+
+
+	printf "Welcome to the ups timer daemon!\nA warning text will be displayed\n"
 	printf	"at a threshold of less than ${percentage_of_time_left_for_warning_to_trigger_graphical_val}%% "
 	printf	"of the total time\n"
 	printf	"which is ${total_minutes_to_wait} minutes (${the_max_time} seconds)\n"
 	printf	"The threshold is: ${the_time_for_warning} seconds\n\n"
-	printf	"Please enjoy your day"
+	
+	sleep 1
+	
+	printf "this is the config file:"
+	
+	sleep 1
+	
+	echo_all_files
 
-	sleep 5.0
+	sleep 1
+	
+	printf	"Please enjoy your day"
+	
+	
+	sleep 3.0
+
 
 	while true;
 	do
 		clear_screen 1
-
-		echo_current_battery_status
+	
+		$status_cmd
 		echo "The current time is: $curr_time"
 		compute_curr_time
 		local are_we_joever=$(check_the_time)
 		local are_we_close=$(we_have_close_to_no_time)
 		echo "Are we over? ${are_we_joever}"
-		echo "Are we close? ${are_we_joever}"
+		echo "Are we close? ${are_we_close}"
 		if [ $are_we_close -eq 1 ]
 		then
 			echo "We have less than ${percentage_of_time_left_for_warning_to_trigger_graphical_val}% of the total time left!"
@@ -247,6 +230,7 @@ main_loop_func(){
 		if [ $are_we_joever -eq 1 ]
 		then
 			echo "We ran out of time We are shutting down. Sorry, man"
+			cd "${kill_script_location}"
 			$kill_script_full_file_path
 			if [ $testing_mode -eq 1 ]
 			then
@@ -263,4 +247,26 @@ main_loop_func(){
 	done
 }
 
-main_loop_func
+init_everything(){
+	$ups_driver_shutdown_cmd
+
+	sleep 1
+
+	$ups_server_shutdown_cmd
+
+	sleep 1
+
+	$ups_driver_init_cmd
+
+	sleep 1
+
+	$ups_server_init_cmd
+
+	sleep 1
+	
+	main_loop_func
+
+}
+
+init_everything
+
