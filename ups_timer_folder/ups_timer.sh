@@ -34,9 +34,11 @@ status_cmd="upsc ${ups_name}"
 
 ups_driver_shutdown_cmd="sudo systemctl stop nut-driver@${ups_name}"
 ups_server_shutdown_cmd="sudo systemctl stop nut-server"
+ups_monitor_shutdown_cmd="sudo systemctl stop nut-monitor"
 
 ups_driver_init_cmd="sudo systemctl start nut-driver@${ups_name}"
 ups_server_init_cmd="sudo systemctl start nut-server"
+ups_monitor_init_cmd="sudo systemctl start nut-monitor"
 
 
 
@@ -248,6 +250,11 @@ main_loop_func(){
 }
 
 init_everything(){
+	
+	$ups_monitor_shutdown_cmd
+	
+	sleep 1
+	
 	$ups_driver_shutdown_cmd
 
 	sleep 1
@@ -262,6 +269,10 @@ init_everything(){
 
 	$ups_server_init_cmd
 
+	sleep 1
+	
+	$ups_monitor_init_cmd
+	
 	sleep 1
 	
 	main_loop_func
